@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Montserrat:wght@400;500;600&display=swap');
+
+@page {
+    size: 1240px 1754px; /* Размеры в пикселях, соответствующие формату A4 */
+}
+
+
+body {
+    font-family: Montserrat;
+    font-size: 16px; /* Уменьшенный размер шрифта */
+    font-weight: 400;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.1cm; /* Уменьшенные отступы */
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form div {
+    display: flex;
+    flex-direction: row;
+}
+
+.form div div {
+    width: 35%;
+    margin: 0 auto;
+    align-items: center;
+    color: #101828;
+}
+
+.form div div p {
+    color: #475467;
+}
+
+.form div div p span {
+    font-weight: 600;
+}
+
+#comment {
+    align-items: flex-start;
+}
+
+.comment {
+    margin-bottom: 50px;
+}
+
+.job {
+    margin-bottom: 5px;
+}
+
+.main-quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-quiz {
+    width: 85%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.body-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+table.table_pdf{
+	width: 100%;
+	border-collapse:collapse;
+	border-spacing:0;
+	height: auto;
+    margin-bottom: 10px;
+}
+
+
+table.table_pdf td,table.table_pdf th {
+	width: 30px;
+	height: 30px;
+    
+}
+
+.expectation td {
+    color: #475467;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.16px;
+}
+
+.components_table td:not(:first-child){
+    width: 18%;
+    text-align: center;
+}
+
+.components_table td {
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.components_table td:first-child {
+    width: 46%;
+}
+
+.title_group td p {
+    margin: 0 0 20px 0;
+    color: #1D2939;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.18px;
+}
+
+.title_icon td{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.title_icon img{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.title {
+    padding-top: 3px;
+    color: #003081;
+    font-family: Garamond;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+}
+
+.hashtag td p {
+    margin: 0 0 20px 0;
+    color: #003081;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.components_table input {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    accent-color: #D0D5DD;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+.components_table input:checked::before {
+    text-align: center;
+    align-self: center;
+    content: url(/img/input.svg);
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.container {
+    padding-bottom: 20px;
+}
