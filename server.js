@@ -73,7 +73,10 @@ const sanitize = require('sanitize-filename');
 const { chromium } = require('playwright');
 
 const app = express();
-const port = 3000;
+
+// Используйте process.env для чтения переменных среды
+const port = process.env.APP_PORT || 3000;
+const ip = process.env.APP_IP || 'localhost';
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -97,8 +100,9 @@ app.post('/submit', async (req, res) => {
 
   const page = await browser.newPage();
 
+  // Используйте переменные для формирования URL
   await page.goto(
-    `http://localhost:3000/pagepdf.html?lastName=${encodeURIComponent(
+    `http://${ip}:${port}/pagepdf.html?lastName=${encodeURIComponent(
       lastName
     )}&firstName=${encodeURIComponent(
       firstName
@@ -126,17 +130,21 @@ app.post('/submit', async (req, res) => {
   await browser.close();
 
   const sanitizedFilename = sanitize(
-    `${lastNameCd}${firstNameCd}${middleNameCd}.pdf`
+    `${lastNameCd}-${firstNameCd}-${middleNameCd}.pdf`
   );
+  console.log('Sanitized Filename:', sanitizedFilename);
+
   const encodedFilename = encodeURIComponent(sanitizedFilename);
+  console.log('Encoded Filename:', encodedFilename);
 
   res.setHeader('Content-Type', 'application/pdf');
   res.setHeader(
     'Content-Disposition',
-    `attachment; filename="${encodedFilename}"`
+    `attachment; filename*=UTF-8''${encodedFilename}`
   );
 
   res.send(pdfBuffer);
 });
 
-app.listen(port, () => console.log(`Сервер работает на порту ${port}`));
+app.listen(port, ip, () => console.log(`Сервер работает на порту ${port} по адресу ${ip}`));
+
