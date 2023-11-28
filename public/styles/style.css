@@ -373,7 +373,7 @@ a:visited {
 .btn:active {
     margin: 20px 0 0 20px;
     display: inline-flex;
-    padding: 12px 20px;
+    padding: 14px 20px;
     border-radius: 14px;
     background: #FFF;
     color: black;
