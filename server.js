@@ -126,7 +126,7 @@ app.post('/submit', async (req, res) => {
   await browser.close();
 
   const sanitizedFilename = sanitize(
-    `${lastNameCd}${firstNameCd}${middleNameCd}.pdf`
+    `${lastNameCd}.pdf`
   );
   const encodedFilename = encodeURIComponent(sanitizedFilename);
 
