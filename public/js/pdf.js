@@ -1,3 +1,15 @@
+
+        var today = new Date();
+
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        var yyyy = today.getFullYear();
+
+        var formattedDate = dd + '.' + mm + '.' + yyyy;
+        const dateNow = document.getElementById('dateNow')
+
+        dateNow.innerHTML = formattedDate
+
 document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
 
