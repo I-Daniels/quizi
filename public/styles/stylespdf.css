@@ -210,7 +210,7 @@ table.table_pdf th {
     line-height: normal;
     letter-spacing: 0.9px;
     white-space: nowrap;
-    border: 1px solid #134061;
+    border: 1px solid #003081;
     padding: 5px 10px;
 }
 
@@ -218,7 +218,7 @@ table.table_pdf th {
     text-align: center;
     font-family: Montserrat;
     margin-bottom: 20px;
-    border: 1px solid #134061;
+    border: 1px solid #003081;
     padding: 5px 10px;
     width: 150px;
     height: 50px;
