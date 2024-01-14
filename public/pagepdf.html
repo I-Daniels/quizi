@@ -47,7 +47,7 @@
                         <p>Пометки и комментарии</p>
                     </div>
                     <div>
-                        <p id="comment"></p>
+                        <p><span id="comment"></span></p>
                     </div>
                 </div>
             </div>
@@ -57,839 +57,1871 @@
         <div class="main-quiz">
             <div class="body-quiz">
                 <div class="body-component">
-                    <table class="table_pdf">
-                        <tbody class="container">
-                            <tr class="expectation">
-                                <td></td>
-                                <td>соответствует <br> ожиданиям</td>
-                                <td>выше <br> ожиданий</td>
-                                <td>ниже <br> ожиданий</td>
-                            </tr>
-                            <tr class="title_icon">
-                                <td colspan="4">
-                                    <img src="img/leader.svg" alt="icon_group">
-                                    <p class="title">Лидерство</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Лояльность к компании</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Назовите цели и ценности вашей компании?</td>
-                                <td>
-                                    <input type="radio" name="i_1" value="Соответствует ожиданиям" id="i-1">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_1" value="Выше ожиданий" id="i-2">
-                                </td>
-                                <td><input type="radio" name="i_1" value="Ниже ожиданий" id="i-3"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Вы гордитесь совей компанией и своей принадлежностью к ней?</td>
-                                <td>
-                                    <input type="radio" name="i_2" value="Соответствует ожиданиям" id="i-4">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_2" value="Выше ожиданий" id="i-5">
-                                </td>
-                                <td><input type="radio" name="i_2" value="Ниже ожиданий" id="i-6"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Кто из руководителей вашей компании является для вас примером лидера?</td>
-                                <td>
-                                    <input type="radio" name="i_3" value="Соответствует ожиданиям" id="i-7">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_3" value="Выше ожиданий" id="i-8">
-                                </td>
-                                <td><input type="radio" name="i_3" value="Ниже ожиданий" id="i-9"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#ответственность #сопричастность #уважение #приятие #цели #ценности</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Саморазвитие</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Назовите как вы повышаете уровень своего развития?</td>
-                                <td>
-                                    <input type="radio" name="i_4" value="Соответствует ожиданиям" id="i-10">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_4" value="Выше ожиданий" id="i-11">
-                                </td>
-                                <td><input type="radio" name="i_4" value="Ниже ожиданий" id="i-12"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какие знания и умения вы прокачивали в последнее время?</td>
-                                <td>
-                                    <input type="radio" name="i_5" value="Соответствует ожиданиям" id="i-13">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_5" value="Выше ожиданий" id="i-14">
-                                </td>
-                                <td><input type="radio" name="i_5" value="Ниже ожиданий" id="i-15"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Чем вы увлекаетесь и как проводите свободное время?</td>
-                                <td>
-                                    <input type="radio" name="i_6" value="Соответствует ожиданиям" id="i-16">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_6" value="Выше ожиданий" id="i-17">
-                                </td>
-                                <td><input type="radio" name="i_6" value="Ниже ожиданий" id="i-18"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#инициатива #действие #активность #кругозор #обратная #связь #опыт
-                                        #открытостьновому
-                                        #различия #разнообразие #самомотивация #амбиции #саморазвитие #самосознание
-                                        #цели
-                                        #экспертиза #знания #навыки</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table_pdf">
-                        <tbody class="container">
-                            <tr class="title_icon">
-                                <td colspan="4">
-                                    <img src="img/people.svg" alt="icon_group">
-                                    <p class="title">Люди</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Как часто вы общаетесь с руководителем?</td>
-                                <td>
-                                    <input type="radio" name="i_7" value="Соответствует ожиданиям" id="i-19">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_7" value="Выше ожиданий" id="i-20">
-                                </td>
-                                <td><input type="radio" name="i_7" value="Ниже ожиданий" id="i-21"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Если ваше мнение не совпадает с руководителем, как вы об этом ему сообщите?</td>
-                                <td>
-                                    <input type="radio" name="i_8" value="Соответствует ожиданиям" id="i-22">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_8" value="Выше ожиданий" id="i-23">
-                                </td>
-                                <td><input type="radio" name="i_8" value="Ниже ожиданий" id="i-24"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Считает ли руководитель вас своим бизнес-партнером?</td>
-                                <td>
-                                    <input type="radio" name="i_9" value="Соответствует ожиданиям" id="i-25">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_9" value="Выше ожиданий" id="i-26">
-                                </td>
-                                <td><input type="radio" name="i_9" value="Ниже ожиданий" id="i-27"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Могут ли они вас рекомендовать как надежного и профессионального специалиста?</td>
-                                <td>
-                                    <input type="radio" name="i_10" value="Соответствует ожиданиям" id="i-28">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_10" value="Выше ожиданий" id="i-29">
-                                </td>
-                                <td><input type="radio" name="i_10" value="Ниже ожиданий" id="i-30"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#бизнес #рынок #коммерци #взаимодействие #общение #сотрудничество #влияние
-                                        #убеждение
-                                        #инициатива #действие #активность #конфликт #напряженность #ответственность
-                                        #открытость
-                                        #прямота #решения #самообладание #уверенность #широта</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Честность и порядочность</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Приведите пример не порядочного поведения кого-либо из ваших знакомых или
-                                    коллег.
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_11" value="Соответствует ожиданиям" id="i-31">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_11" value="Выше ожиданий" id="i-32">
-                                </td>
-                                <td><input type="radio" name="i_11" value="Ниже ожиданий" id="i-33"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Как вы оцениваете их поведение?</td>
-                                <td>
-                                    <input type="radio" name="i_12" value="Соответствует ожиданиям" id="i-34">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_12" value="Выше ожиданий" id="i-35">
-                                </td>
-                                <td><input type="radio" name="i_12" value="Ниже ожиданий" id="i-36"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Что может заставить вас поступиться своими принципами?</td>
-                                <td>
-                                    <input type="radio" name="i_13" value="Соответствует ожиданиям" id="i-37">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_13" value="Выше ожиданий" id="i-38">
-                                </td>
-                                <td><input type="radio" name="i_13" value="Ниже ожиданий" id="i-39"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#внимательность #неравнодушие #доверие #информация #данные #ответственность
-                                        #открытость
-                                        #прямота #уважение #приятие #ценности</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table_pdf">
-                        <tbody class="container">
-                            <tr class="title_icon">
-                                <td colspan="4">
-                                    <img src="img/personality.svg" alt="icon_group">
-                                    <p class="title">Личность</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Настойчивость</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Оцените уровень своей работоспобности
-                                    от 1 до 10?</td>
-                                <td>
-                                    <input type="radio" name="i_14" value="Соответствует ожиданиям" id="i-40">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_14" value="Выше ожиданий" id="i-41">
-                                </td>
-                                <td><input type="radio" name="i_14" value="Ниже ожиданий" id="i-42"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Если вам не удалось решить задачу с первого раза, как вы поступите? Приведите
-                                    пример
-                                    такой задачи.</td>
-                                <td>
-                                    <input type="radio" name="i_15" value="Соответствует ожиданиям" id="i-43">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_15" value="Выше ожиданий" id="i-44">
-                                </td>
-                                <td><input type="radio" name="i_15" value="Ниже ожиданий" id="i-45"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#гибкость #вариативность #задачи #операции #позитивныйнастрой #проблемы
-                                        #препятствия
-                                        #результат #уверенность #упорство #энтузиазм #энергия</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Самообладание</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Что является для вас источником стресса?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_18" value="Соответствует ожиданиям" id="i-46">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_18" value="Выше ожиданий" id="i-47">
-                                </td>
-                                <td><input type="radio" name="i_18" value="Ниже ожиданий" id="i-48"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Вы работали в состоянии стресса? Приходилось ли принимать решения в таких
-                                    ситуациях?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_19" value="Соответствует ожиданиям" id="i-49">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_19" value="Выше ожиданий" id="i-50">
-                                </td>
-                                <td><input type="radio" name="i_19" value="Ниже ожиданий" id="i-51"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Как вы снимаете стресс?</td>
-                                <td>
-                                    <input type="radio" name="i_20" value="Соответствует ожиданиям" id="i-52">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_20" value="Выше ожиданий" id="i-53">
-                                </td>
-                                <td><input type="radio" name="i_20" value="Ниже ожиданий" id="i-54"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Как переживаете неудачи и поражения?</td>
-                                <td>
-                                    <input type="radio" name="i_21" value="Соответствует ожиданиям" id="i-55">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_21" value="Выше ожиданий" id="i-56">
-                                </td>
-                                <td><input type="radio" name="i_21" value="Ниже ожиданий" id="i-57"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#конфликт #напряженность #ошибки #неудачи #поддержка #участие
-                                        #позитивныйнастрой
-                                        #проблемы #препятствия #решения #самообладание #самосознание</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Ориентация на результат</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Приведите пример достижения поставленной цели (бизнес или личная цель)?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_22" value="Соответствует ожиданиям" id="i-58">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_22" value="Выше ожиданий" id="i-59">
-                                </td>
-                                <td><input type="radio" name="i_22" value="Ниже ожиданий" id="i-60"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Как вы оцениваете достигнутый результат?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_23" value="Соответствует ожиданиям" id="i-61">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_23" value="Выше ожиданий" id="i-62">
-                                </td>
-                                <td><input type="radio" name="i_23" value="Ниже ожиданий" id="i-63"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>С какими препятствиями вы сталкивались в процессе достижения цели? Как
-                                    преодолевали
-                                    возникающие препятствия и трудности?</td>
-                                <td>
-                                    <input type="radio" name="i_24" value="Соответствует ожиданиям" id="i-64">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_24" value="Выше ожиданий" id="i-65">
-                                </td>
-                                <td><input type="radio" name="i_24" value="Ниже ожиданий" id="i-66"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#операции #проблемы #препятствия #результат #ресурсы #самомотивация #амбиции
-                                        #сроки
-                                        #стратегии #реализация #упорство #цели</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Смелость</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Приведите пример, когда вам пришлось принимать непопулярные решения?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_25" value="Соответствует ожиданиям" id="i-67">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_25" value="Выше ожиданий" id="i-68">
-                                </td>
-                                <td><input type="radio" name="i_25" value="Ниже ожиданий" id="i-69"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Если вы узнали о серьезных возникших проблемах ваши действия?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_26" value="Соответствует ожиданиям" id="i-70">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_26" value="Выше ожиданий" id="i-71">
-                                </td>
-                                <td><input type="radio" name="i_26" value="Ниже ожиданий" id="i-72"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Насколько вы зависите от мнения окружающих?</td>
-                                <td>
-                                    <input type="radio" name="i_27" value="Соответствует ожиданиям" id="i-73">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_27" value="Выше ожиданий" id="i-74">
-                                </td>
-                                <td><input type="radio" name="i_27" value="Ниже ожиданий" id="i-75"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Готовы ли обсуждать способы решения или переходите к оперативным действиям?</td>
-                                <td>
-                                    <input type="radio" name="i_17" value="Соответствует ожиданиям" id="i-76">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_17" value="Выше ожиданий" id="i-77">
-                                </td>
-                                <td><input type="radio" name="i_17" value="Ниже ожиданий" id="i-78"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#влияние #убеждение #инициатива #действие #активность #конфликт
-                                        #напряженность
-                                        #ответственность #открытость #прямота #проблемы #препятствия #решения
-                                        #решительность #скорость #самомотивация #амбиции #уверенность</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table_pdf">
-                        <tbody class="container">
-                            <tr class="title_icon">
-                                <td colspan="4">
-                                    <img src="img/strategy.svg" alt="icon_group">
-                                    <p class="title">Стратегия</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Принятие решений</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Приведите пример решений, которые лежат в вашей зоне ответственности? Какие
-                                    факторы
-                                    и аспекты вы учитываете?</td>
-                                <td>
-                                    <input type="radio" name="i_28" value="Соответствует ожиданиям" id="i-79">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_28" value="Выше ожиданий" id="i-80">
-                                </td>
-                                <td><input type="radio" name="i_28" value="Ниже ожиданий" id="i-81"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Насколько данное решение было принято своевременно? Рассматривали ли вы другие
-                                    варианты решений? Возможно, обсуждали с коллегами?</td>
-                                <td>
-                                    <input type="radio" name="i_29" value="Соответствует ожиданиям" id="i-82">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_29" value="Выше ожиданий" id="i-83">
-                                </td>
-                                <td><input type="radio" name="i_29" value="Ниже ожиданий" id="i-84"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Перечислите критерии оценки правильности и успешности принятого решения?
-                                <td>
-                                    <input type="radio" name="i_30" value="Соответствует ожиданиям" id="i-85">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_30" value="Выше ожиданий" id="i-86">
-                                </td>
-                                <td><input type="radio" name="i_30" value="Ниже ожиданий" id="i-87"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#аналитичность #гибкость #ответственность #результат #решения #системность
-                                        #сроки
-                                        #стратегия</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Профессионализм</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Когда в последний раз вы повышали квалификацию?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_31" value="Соответствует ожиданиям" id="i-88">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_31" value="Выше ожиданий" id="i-89">
-                                </td>
-                                <td><input type="radio" name="i_31" value="Ниже ожиданий" id="i-90"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какие профессиональные мероприятия посещаете?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_32" value="Соответствует ожиданиям" id="i-91">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_32" value="Выше ожиданий" id="i-92">
-                                </td>
-                                <td><input type="radio" name="i_32" value="Ниже ожиданий" id="i-93"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какие технологии используете в своей работе?</td>
-                                <td>
-                                    <input type="radio" name="i_33" value="Соответствует ожиданиям" id="i-94">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_33" value="Выше ожиданий" id="i-95">
-                                </td>
-                                <td><input type="radio" name="i_33" value="Ниже ожиданий" id="i-96"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#бизнес #рынок #коммерция #овлечение #опыт #помощь #содействие #саморазвитие
-                                        #технологии
-                                        #экспертиза #знания #навыки</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Системное мышление</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какие источники информации вы используете?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_34" value="Соответствует ожиданиям" id="i-97">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_34" value="Выше ожиданий" id="i-98">
-                                </td>
-                                <td><input type="radio" name="i_34" value="Ниже ожиданий" id="i-99"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Как систематизируете входящую информацию?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_35" value="Соответствует ожиданиям" id="i-100">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_35" value="Выше ожиданий" id="i-101">
-                                </td>
-                                <td><input type="radio" name="i_35" value="Ниже ожиданий" id="i-102"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Приведите пример необычной ситуации. Как вы подходили к ее анализу и проверяли
-                                    свои
-                                    гипотезы и допущения?</td>
-                                <td>
-                                    <input type="radio" name="i_36" value="Соответствует ожиданиям" id="i-103">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_36" value="Выше ожиданий" id="i-104">
-                                </td>
-                                <td><input type="radio" name="i_36" value="Ниже ожиданий" id="i-105"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#аналитичность #информация #данные #различия #разнообразие #системность
-                                        #структурированность #широта</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Стратегическое видение</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Участвуете ли вы в стратегическом планировании в вашей компании?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_37" value="Соответствует ожиданиям" id="i-106">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_37" value="Выше ожиданий" id="i-107">
-                                </td>
-                                <td><input type="radio" name="i_37" value="Ниже ожиданий" id="i-108"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Приведите ключевые стратегические приоритеты развития бизнеса компании N?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_38" value="Соответствует ожиданиям" id="i-109">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_38" value="Выше ожиданий" id="i-110">
-                                </td>
-                                <td><input type="radio" name="i_38" value="Ниже ожиданий" id="i-111"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Учитываете ли вы возможные угрозы и риски?</td>
-                                <td>
-                                    <input type="radio" name="i_39" value="Соответствует ожиданиям" id="i-112">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_39" value="Выше ожиданий" id="i-113">
-                                </td>
-                                <td><input type="radio" name="i_39" value="Ниже ожиданий" id="i-114"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какую систему целеполагания вы считаете эффективной?</td>
-                                <td>
-                                    <input type="radio" name="i_40" value="Соответствует ожиданиям" id="i-115">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_40" value="Выше ожиданий" id="i-116">
-                                </td>
-                                <td><input type="radio" name="i_40" value="Ниже ожиданий" id="i-117"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#бизнес #планирование #приоритеты #риски #стратегия #цели</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table_pdf">
-                        <tbody class="container">
-                            <tr class="title_icon">
-                                <td colspan="4">
-                                    <img src="img/tasks.svg" alt="icon_group">
-                                    <p class="title">Задачи</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Постановка и совершенствование рабочих процессов</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Приведите пример оптимизации бизнес-процесса вашей функции?</td>
-                                <td>
-                                    <input type="radio" name="i_41" value="Соответствует ожиданиям" id="i-118">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_41" value="Выше ожиданий" id="i-119">
-                                </td>
-                                <td><input type="radio" name="i_41" value="Ниже ожиданий" id="i-120"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Насколько они эффективны?</td>
-                                <td>
-                                    <input type="radio" name="i_42" value="Соответствует ожиданиям" id="i-121">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_42" value="Выше ожиданий" id="i-122">
-                                </td>
-                                <td><input type="radio" name="i_42" value="Ниже ожиданий" id="i-123"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какие ресурсы, технологии вы использовали для оптимизации рабочих процессов?
-                                <td>
-                                    <input type="radio" name="i_43" value="Соответствует ожиданиям" id="i-124">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_43" value="Выше ожиданий" id="i-125">
-                                </td>
-                                <td><input type="radio" name="i_43" value="Ниже ожиданий" id="i-126"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Применяете ли лучшие практики для повышения эффективности рабочих процессов? На
-                                    какие компании вы ориентируетесь?
-                                <td>
-                                    <input type="radio" name="i_44" value="Соответствует ожиданиям" id="i-127">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_44" value="Выше ожиданий" id="i-128">
-                                </td>
-                                <td><input type="radio" name="i_44" value="Ниже ожиданий" id="i-129"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#инновации #координация #лучшиепрактики #операции #оптимизация #процессы
-                                        #системы
-                                        #стандарты #регламенты #ресурсы</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Управление качеством</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Вы требовательны к себе и окружающим?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_45" value="Соответствует ожиданиям" id="i-130">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_45" value="Выше ожиданий" id="i-131">
-                                </td>
-                                <td><input type="radio" name="i_45" value="Ниже ожиданий" id="i-132"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Прикладываете ли вы усилия, чтобы исключить недоработки и добиться требуемого
-                                    качества результата?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_46" value="Соответствует ожиданиям" id="i-133">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_46" value="Выше ожиданий" id="i-134">
-                                </td>
-                                <td><input type="radio" name="i_46" value="Ниже ожиданий" id="i-135"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Помогаете ли вы коллегам\подчиненным отслеживать качество выполненной работы?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_47" value="Соответствует ожиданиям" id="i-136">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_47" value="Выше ожиданий" id="i-137">
-                                </td>
-                                <td><input type="radio" name="i_47" value="Ниже ожиданий" id="i-138"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какие знаете инструменты\технологии позволяющие повысить качество?</td>
-                                <td>
-                                    <input type="radio" name="i_48" value="Соответствует ожиданиям" id="i-139">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_48" value="Выше ожиданий" id="i-140">
-                                </td>
-                                <td><input type="radio" name="i_48" value="Ниже ожиданий" id="i-141"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#внимательность #неравнодушие #операции #оптимизация #улучшение #помощь
-                                        #содействие
-                                        #процессы #системы #стандарты #регламенты #результат #сотрудники
-                                        #подчиненные
-                                        #сроки</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Решение проблем</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Приведите пример проблемной ситуации? Как быстро удалось понять
-                                    причины возникновения?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_49" value="Соответствует ожиданиям" id="i-142">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_49" value="Выше ожиданий" id="i-143">
-                                </td>
-                                <td><input type="radio" name="i_49" value="Ниже ожиданий" id="i-144"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какие решения были предложены вами для ее решения?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_50" value="Соответствует ожиданиям" id="i-145">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_50" value="Выше ожиданий" id="i-146">
-                                </td>
-                                <td><input type="radio" name="i_50" value="Ниже ожиданий" id="i-147"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какие выводы вы сделали?</td>
-                                <td>
-                                    <input type="radio" name="i_51" value="Соответствует ожиданиям" id="i-148">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_51" value="Выше ожиданий" id="i-149">
-                                </td>
-                                <td><input type="radio" name="i_51" value="Ниже ожиданий" id="i-150"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>##аналитичность #гибкость #вариативность #информация #данные #находчивость
-                                        #изобретательность
-                                        #проблемы #препятствия #решения #решительность #скорость</p>
-                                </td>
-                            </tr>
-                            <tr class="title_group">
-                                <td colspan="4">
-                                    <p>Управление исполнением</p>
-                                </td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Опишите процесс постановки задач подчиненным?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_52" value="Соответствует ожиданиям" id="i-151">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_52" value="Выше ожиданий" id="i-152">
-                                </td>
-                                <td><input type="radio" name="i_52" value="Ниже ожиданий" id="i-153"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Обсуждаете ли вы предварительно план выполнения?
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_53" value="Соответствует ожиданиям" id="i-154">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_53" value="Выше ожиданий" id="i-155">
-                                </td>
-                                <td><input type="radio" name="i_53" value="Ниже ожиданий" id="i-156"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Как часто проверяете ход выполнения поставленных задач?</td>
-                                <td>
-                                    <input type="radio" name="i_54" value="Соответствует ожиданиям" id="i-157">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_54" value="Выше ожиданий" id="i-158">
-                                </td>
-                                <td><input type="radio" name="i_54" value="Ниже ожиданий" id="i-159"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>Какую систему отчетности считаете эффективной?</td>
-                                <td>
-                                    <input type="radio" name="i_55" value="Соответствует ожиданиям" id="i-160">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_55" value="Выше ожиданий" id="i-161">
-                                </td>
-                                <td><input type="radio" name="i_55" value="Ниже ожиданий" id="i-162"></td>
-                            </tr>
-                            <tr class="components_table">
-                                <td>В какой форме и как часто даете обратную связь?</td>
-                                <td>
-                                    <input type="radio" name="i_56" value="Соответствует ожиданиям" id="i-163">
-                                </td>
-                                <td>
-                                    <input type="radio" name="i_56" value="Выше ожиданий" id="i-164">
-                                </td>
-                                <td><input type="radio" name="i_56" value="Ниже ожиданий" id="i-165"></td>
-                            </tr>
-                            <tr class="hashtag">
-                                <td colspan="4">
-                                    <p>#задачи #коммуникация #контроль #координация #обратнаясвязь
-                                        #помощь #содействие #результат #ресурсы #сроки #цели</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-info">
+                        <table class="table_pdf">
+                            <tbody class="container">
+                                <tr class="title_icon">
+                                    <td colspan="4" id="tdtitle">
+                                        <img src="img/leader.svg" alt="icon_group">
+                                        <p class="title">Лидерство</p>
+                                        <span id="result">Оценка: <span class="result"></span></span>
+                                    </td>
+                                </tr>
+                                <tr class="expectation">
+                                    <td></td>
+                                    <td>соответствует <br> ожиданиям</td>
+                                    <td>выше <br> ожиданий</td>
+                                    <td>ниже <br> ожиданий</td>
+                                </tr>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Лояльность к компании</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Назовите цели и ценности вашей компании?</td>
+                                            <td>
+                                                <input type="radio" name="i_1" value="Соответствует ожиданиям" id="i-1">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_1" value="Выше ожиданий" id="i-2">
+                                            </td>
+                                            <td><input type="radio" name="i_1" value="Ниже ожиданий" id="i-3"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Вы гордитесь совей компанией и своей принадлежностью к ней?</td>
+                                            <td>
+                                                <input type="radio" name="i_2" value="Соответствует ожиданиям" id="i-4">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_2" value="Выше ожиданий" id="i-5">
+                                            </td>
+                                            <td><input type="radio" name="i_2" value="Ниже ожиданий" id="i-6"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Кто из руководителей вашей компании является для вас примером лидера?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_3" value="Соответствует ожиданиям" id="i-7">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_3" value="Выше ожиданий" id="i-8">
+                                            </td>
+                                            <td><input type="radio" name="i_3" value="Ниже ожиданий" id="i-9"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#ответственность #сопричастность #уважение #приятие #цели
+                                                            #ценности
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Лояльность компании
+                                                    </td>
+                                                    <td>Разделяет ценности компании, вносит значимый вклад в реализацию
+                                                        целей,
+                                                        принимает действующие нормы и правила, гордится компанией и
+                                                        своей
+                                                        принадлежностью к ней
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # ответственность
+                                                        <br> # сопричастность
+                                                        <br> # уважение, приятие
+                                                        <br> # цели
+                                                        <br> # ценности
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Проявляет убежденную приверженность целям и ценностям
+                                                            компании
+                                                        </li>
+                                                        <li>Принимает нормы и правила, действующие в компании</li>
+                                                        <li>Гордится компанией и своей принадлежностью к ней</li>
+                                                        <li>Заботится о репутации компании, не совершает поступков,
+                                                            способных ей
+                                                            повредить</li>
+                                                        <li>Прикладывает максимум усилий и вносит значимый вклад в
+                                                            достижение
+                                                            целей
+                                                            компании</li>
+                                                        <li>Поступается личными интересами, если они противоречат
+                                                            интересам
+                                                            дела
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Саморазвитие</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Назовите как вы повышаете уровень своего развития?</td>
+                                            <td>
+                                                <input type="radio" name="i_4" value="Соответствует ожиданиям"
+                                                    id="i-10">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_4" value="Выше ожиданий" id="i-11">
+                                            </td>
+                                            <td><input type="radio" name="i_4" value="Ниже ожиданий" id="i-12"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какие знания и умения вы прокачивали в последнее время?</td>
+                                            <td>
+                                                <input type="radio" name="i_5" value="Соответствует ожиданиям"
+                                                    id="i-13">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_5" value="Выше ожиданий" id="i-14">
+                                            </td>
+                                            <td><input type="radio" name="i_5" value="Ниже ожиданий" id="i-15"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Чем вы увлекаетесь и как проводите свободное время?</td>
+                                            <td>
+                                                <input type="radio" name="i_6" value="Соответствует ожиданиям"
+                                                    id="i-16">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_6" value="Выше ожиданий" id="i-17">
+                                            </td>
+                                            <td><input type="radio" name="i_6" value="Ниже ожиданий" id="i-18"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#инициатива #действие #активность #кругозор #обратная #связь
+                                                            #опыт
+                                                            #открытостьновому
+                                                            #различия #разнообразие #самомотивация #амбиции
+                                                            #саморазвитие
+                                                            #самосознание
+                                                            #цели
+                                                            #экспертиза #знания #навыки</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        Саморазвитие*
+                                                    </td>
+                                                    <td>Целенаправленно занимается саморазвитием, использует возможности
+                                                        для
+                                                        получения нового опыта, знаний и навыков, имеет разнообразные
+                                                        интересы,
+                                                        расширяет кругозор
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # инициатива, действие, активность
+                                                        <br> # кругозор
+                                                        <br> # обратная связь
+                                                        <br> # опыт
+                                                        <br> # открытость новому
+                                                        <br> # различия, разнообразие
+                                                        <br> # самомотивация, амбиции
+                                                        <br> # саморазвитие
+                                                        <br> # самосознание
+                                                        <br> # цели
+                                                        <br> # экспертиза, знания, навыки
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Демонстрирует широкий кругозор и разнообразие интересов</li>
+                                                        <li>Ставит перед собой цели профессионального и карьерного
+                                                            развития
+                                                        </li>
+                                                        <li>Сосредотачивает усилия на развитии качеств и навыков,
+                                                            которые
+                                                            потребуются в будущем </li>
+                                                        <li>Использует возможности для приобретения нового опыта и
+                                                            навыков
+                                                        </li>
+                                                        <li>Интересуется опытом других, перенимает и адаптирует успешные
+                                                            подходы
+                                                        </li>
+                                                        <li>Активно запрашивает обратную связь, меняет поведение на
+                                                            основе
+                                                            полученных отзывов</li>
+                                                        <li>Поддерживает баланс работы и личной жизни </li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    <tbody>
+                                </table>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-info">
+                        <table class="table_pdf">
+                            <tbody class="container">
+                                <tr class="title_icon">
+                                    <td colspan="4" id="tdtitle">
+                                        <img src="img/people.svg" alt="icon_group">
+                                        <p class="title">Люди</p>
+                                        <span id="result">Оценка: <span class="result"></span></span>
+                                    </td>
+                                </tr>
+                                <tr class="expectation">
+                                    <td></td>
+                                    <td>соответствует <br> ожиданиям</td>
+                                    <td>выше <br> ожиданий</td>
+                                    <td>ниже <br> ожиданий</td>
+                                </tr>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Взаимодействие с вышестоящим руководством</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Как часто вы общаетесь с руководителем?</td>
+                                            <td>
+                                                <input type="radio" name="i_7" value="Соответствует ожиданиям"
+                                                    id="i-19">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_7" value="Выше ожиданий" id="i-20">
+                                            </td>
+                                            <td><input type="radio" name="i_7" value="Ниже ожиданий" id="i-21"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Если ваше мнение не совпадает с руководителем, как вы об этом ему
+                                                сообщите?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_8" value="Соответствует ожиданиям"
+                                                    id="i-22">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_8" value="Выше ожиданий" id="i-23">
+                                            </td>
+                                            <td><input type="radio" name="i_8" value="Ниже ожиданий" id="i-24"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Считает ли руководитель вас своим бизнес-партнером?</td>
+                                            <td>
+                                                <input type="radio" name="i_9" value="Соответствует ожиданиям"
+                                                    id="i-25">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_9" value="Выше ожиданий" id="i-26">
+                                            </td>
+                                            <td><input type="radio" name="i_9" value="Ниже ожиданий" id="i-27"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Могут ли они вас рекомендовать как надежного и профессионального
+                                                специалиста?</td>
+                                            <td>
+                                                <input type="radio" name="i_10" value="Соответствует ожиданиям"
+                                                    id="i-28">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_10" value="Выше ожиданий" id="i-29">
+                                            </td>
+                                            <td><input type="radio" name="i_10" value="Ниже ожиданий" id="i-30"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#бизнес #рынок #коммерци #взаимодействие #общение
+                                                            #сотрудничество
+                                                            #влияние
+                                                            #убеждение
+                                                            #инициатива #действие #активность #конфликт #напряженность
+                                                            #ответственность
+                                                            #открытость
+                                                            #прямота #решения #самообладание #уверенность #широта</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                    <table class="table-information">
+                                        <tbody>
+                                            <tr>
+                                                <td>Взаимодействие с вышестоящим руководством
+                                                </td>
+                                                <td>Уверенно и убедительно общается с вышестоящим руководством,
+                                                    старается
+                                                    смотреть на бизнес с точки зрения его руководителей, обладает
+                                                    управленческой
+                                                    зрелостью
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <br> # бизнес, рынок, коммерция
+                                                    <br> # взаимодействие, общение, сотрудничество
+                                                    <br> # влияние, убеждение
+                                                    <br> # инициатива, действие, активность
+                                                    <br> # конфликт, напряженность
+                                                    <br> # ответственность
+                                                    <br> # открытость, прямота
+                                                    <br> # решения
+                                                    <br> # самообладание
+                                                    <br> # уверенность
+                                                    <br> # широта
+                                                </td>
+                                                <td>
+                                                    <br>
+                                                    <li>Уверенно и убедительно общается с вышестоящим руководством</li>
+                                                    <li>Понимает содержание и характер работы руководителей, старается
+                                                        смотреть на бизнес в их перспективе</li>
+                                                    <li>Приходит к руководителю не с проблемой, а с вариантами решения
+                                                    </li>
+                                                    <li>Является для руководителя надежным партнером, на которого можно
+                                                        положиться</li>
+                                                    <li>Высказывает возражения, если не согласен с позицией более
+                                                        авторитетных или статусных сотрудников</li>
+                                                    <li>Сохраняет самообладание и конструктивный настрой в жесткой
+                                                        коммуникации с более статусными людьми</li>
+                                                    <li>Обладает управленческой зрелостью, необходимой для уверенного
+                                                        общения
+                                                        на высшем уровне</li>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </table>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Честность и порядочность</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Приведите пример не порядочного поведения кого-либо из ваших знакомых
+                                                или
+                                                коллег.
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_11" value="Соответствует ожиданиям"
+                                                    id="i-31">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_11" value="Выше ожиданий" id="i-32">
+                                            </td>
+                                            <td><input type="radio" name="i_11" value="Ниже ожиданий" id="i-33"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Как вы оцениваете их поведение?</td>
+                                            <td>
+                                                <input type="radio" name="i_12" value="Соответствует ожиданиям"
+                                                    id="i-34">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_12" value="Выше ожиданий" id="i-35">
+                                            </td>
+                                            <td><input type="radio" name="i_12" value="Ниже ожиданий" id="i-36"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Что может заставить вас поступиться своими принципами?</td>
+                                            <td>
+                                                <input type="radio" name="i_13" value="Соответствует ожиданиям"
+                                                    id="i-37">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_13" value="Выше ожиданий" id="i-38">
+                                            </td>
+                                            <td><input type="radio" name="i_13" value="Ниже ожиданий" id="i-39"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#внимательность #неравнодушие #доверие #информация #данные
+                                                            #ответственность
+                                                            #открытость
+                                                            #прямота #уважение #приятие #ценности</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                    <table class="table-information">
+                                        <tbody>
+                                            <tr>
+                                                <td>Честность и порядочность
+                                                </td>
+                                                <td>Проявляет честность и порядочность, придерживается высоких моральных
+                                                    принципов, соблюдает профессиональную этику и конфиденциальность,
+                                                    располагает к себе и оправдывает доверие
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <br> # внимательность, неравнодушие
+                                                    <br> # доверие
+                                                    <br> # информация, данные
+                                                    <br> # ответственность
+                                                    <br> # открытость, прямота
+                                                    <br> # уважение, приятие
+                                                    <br> # ценности
+                                                </td>
+                                                <td>
+                                                    <br>
+                                                    <li>Придерживается высоких этических стандартов в любых
+                                                        обстоятельствах
+                                                    </li>
+                                                    <li>Действует открыто и прямо, не имеет скрытой повестки </li>
+                                                    <li>Завоевывает расположение окружающих, оправдывает оказываемое
+                                                        доверие
+                                                    </li>
+                                                    <li>Следует принципам профессиональной этики</li>
+                                                    <li>Соблюдает конфиденциальность, осмотрительно обращается с
+                                                        информацией
+                                                    </li>
+                                                    <li>Не остается равнодушным к проявлениям, противоречащим принципам
+                                                        и
+                                                        ценностям компании</li>
+                                                    <li>Уважает убеждения и ценности других людей</li>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </table>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-info">
+                        <table class="table_pdf">
+                            <tbody class="container">
+                                <tr class="title_icon">
+                                    <td colspan="4" id="tdtitle">
+                                        <img src="img/personality.svg" alt="icon_group">
+                                        <p class="title">Личность</p>
+                                        <span id="result">Оценка: <span class="result"></span></span>
+                                    </td>
+                                </tr>
+                                <tr class="expectation">
+                                    <td></td>
+                                    <td>соответствует <br> ожиданиям</td>
+                                    <td>выше <br> ожиданий</td>
+                                    <td>ниже <br> ожиданий</td>
+                                </tr>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Настойчивость</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Оцените уровень своей работоспобности
+                                                от 1 до 10?</td>
+                                            <td>
+                                                <input type="radio" name="i_14" value="Соответствует ожиданиям"
+                                                    id="i-40">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_14" value="Выше ожиданий" id="i-41">
+                                            </td>
+                                            <td><input type="radio" name="i_14" value="Ниже ожиданий" id="i-42"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Если вам не удалось решить задачу с первого раза, как вы поступите?
+                                                Приведите
+                                                пример
+                                                такой задачи.</td>
+                                            <td>
+                                                <input type="radio" name="i_15" value="Соответствует ожиданиям"
+                                                    id="i-43">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_15" value="Выше ожиданий" id="i-44">
+                                            </td>
+                                            <td><input type="radio" name="i_15" value="Ниже ожиданий" id="i-45"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#гибкость #вариативность #задачи #операции #позитивныйнастрой
+                                                            #проблемы
+                                                            #препятствия
+                                                            #результат #уверенность #упорство #энтузиазм #энергия</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Настойчивость
+                                                    </td>
+                                                    <td>Обладает уверенностью, энергией и целеустремленностью, пробует
+                                                        разные
+                                                        подходы и прикладывает дополнительные усилия для реализации
+                                                        поставленных
+                                                        задач
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # гибкость, вариативность
+                                                        <br> # задачи
+                                                        <br> # операции
+                                                        <br> # позитивный настрой
+                                                        <br> # проблемы, препятствия
+                                                        <br> # результат
+                                                        <br> # уверенность
+                                                        <br> # упорство
+                                                        <br> # энтузиазм, энергия
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Обладает высокой энергией и работоспособностью, умеет
+                                                            мобилизоваться
+                                                        </li>
+                                                        <li>Верит в свои силы и в положительный результат</li>
+                                                        <li>Проявляет упорство, доводит начатое до конца, если задача
+                                                            сохраняет
+                                                            актуальность</li>
+                                                        <li>Заново возвращается к задаче, если не удалось решить ее с
+                                                            первого раза
+                                                        </li>
+                                                        <li>Проявляет вариативность, находит альтернативные способы
+                                                            достижения цели
+                                                        </li>
+                                                        <li>Прикладывает дополнительные усилия для достижения результата
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                                <table>
+                                    <tbody>
+                                        <table class="table-section">
+                                            <tbody>
+                                                <tr class="title_group">
+                                                    <td colspan="4">
+                                                        <p>Самообладание</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Что является для вас источником стресса?
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_18" value="Соответствует ожиданиям"
+                                                            id="i-46">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_18" value="Выше ожиданий" id="i-47">
+                                                    </td>
+                                                    <td><input type="radio" name="i_18" value="Ниже ожиданий" id="i-48">
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Вы работали в состоянии стресса? Приходилось ли принимать
+                                                        решения в
+                                                        таких
+                                                        ситуациях?
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_19" value="Соответствует ожиданиям"
+                                                            id="i-49">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_19" value="Выше ожиданий" id="i-50">
+                                                    </td>
+                                                    <td><input type="radio" name="i_19" value="Ниже ожиданий" id="i-51">
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Как вы снимаете стресс?</td>
+                                                    <td>
+                                                        <input type="radio" name="i_20" value="Соответствует ожиданиям"
+                                                            id="i-52">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_20" value="Выше ожиданий" id="i-53">
+                                                    </td>
+                                                    <td><input type="radio" name="i_20" value="Ниже ожиданий" id="i-54">
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Как переживаете неудачи и поражения?</td>
+                                                    <td>
+                                                        <input type="radio" name="i_21" value="Соответствует ожиданиям"
+                                                            id="i-55">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_21" value="Выше ожиданий" id="i-56">
+                                                    </td>
+                                                    <td><input type="radio" name="i_21" value="Ниже ожиданий" id="i-57">
+                                                    </td>
+                                                </tr>
+                                                <table id="hashtag">
+                                                    <tbody>
+                                                        <tr class="hashtag">
+                                                            <td colspan="4">
+                                                                <p>#конфликт #напряженность #ошибки #неудачи #поддержка
+                                                                    #участие
+                                                                    #позитивныйнастрой
+                                                                    #проблемы #препятствия #решения #самообладание
+                                                                    #самосознание
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="average-values"></div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table-information">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Самообладание
+                                                            </td>
+                                                            <td>Справляется со стрессом, сохраняет самообладание,
+                                                                здравомыслие и
+                                                                работоспособность, настроен позитивно, внушает
+                                                                уверенность другим
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <br> # конфликт, напряженность
+                                                                <br> # ошибки, неудачи
+                                                                <br> # поддержка, участие
+                                                                <br> # позитивный настрой
+                                                                <br> # проблемы, препятствия
+                                                                <br> # решения
+                                                                <br> # самообладание
+                                                                <br> # самосознание
+                                                            </td>
+                                                            <td>
+                                                                <br>
+                                                                <li>Знает, что является для него источником стресса</li>
+                                                                <li>Сохраняет собранность и работоспособность в условиях
+                                                                    напряжения,
+                                                                    давления и стресса</li>
+                                                                <li>В стрессовых обстоятельствах ищет решение, а не
+                                                                    усугубляет проблему</li>
+                                                                <li>Принимает здравые решения, несмотря на эмоциональный
+                                                                    фон</li>
+                                                                <li>Сохраняет позитивный настрой, внушает уверенность
+                                                                    окружающим</li>
+                                                                <li>Умеет восстанавливаться после неудач</li>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-section">
+                                            <tbody>
+                                                <tr class="title_group">
+                                                    <td colspan="4">
+                                                        <p>Ориентация на результат</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Приведите пример достижения поставленной цели (бизнес или личная
+                                                        цель)?
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_22" value="Соответствует ожиданиям"
+                                                            id="i-58">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_22" value="Выше ожиданий" id="i-59">
+                                                    </td>
+                                                    <td><input type="radio" name="i_22" value="Ниже ожиданий" id="i-60">
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Как вы оцениваете достигнутый результат?
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_23" value="Соответствует ожиданиям"
+                                                            id="i-61">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_23" value="Выше ожиданий" id="i-62">
+                                                    </td>
+                                                    <td><input type="radio" name="i_23" value="Ниже ожиданий" id="i-63">
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>С какими препятствиями вы сталкивались в процессе достижения
+                                                        цели? Как
+                                                        преодолевали
+                                                        возникающие препятствия и трудности?</td>
+                                                    <td>
+                                                        <input type="radio" name="i_24" value="Соответствует ожиданиям"
+                                                            id="i-64">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_24" value="Выше ожиданий" id="i-65">
+                                                    </td>
+                                                    <td><input type="radio" name="i_24" value="Ниже ожиданий" id="i-66">
+                                                    </td>
+                                                </tr>
+                                                <table id="hashtag">
+                                                    <tbody>
+                                                        <tr class="hashtag">
+                                                            <td colspan="4">
+                                                                <p>#операции #проблемы #препятствия #результат #ресурсы
+                                                                    #самомотивация
+                                                                    #амбиции
+                                                                    #сроки
+                                                                    #стратегии #реализация #упорство #цели</p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="average-values"></div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table-information">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ориентация на результат
+                                                            </td>
+                                                            <td>Достигает результатов, отвечающих поставленным целям, в
+                                                                том числе, в сложных
+                                                                условиях и в сжатые сроки, действует собранно,
+                                                                преодолевает препятствия
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <br> # операции
+                                                                <br> # проблемы, препятствия
+                                                                <br> # результат
+                                                                <br> # ресурсы
+                                                                <br> # самомотивация, амбиции
+                                                                <br> # сроки
+                                                                <br> # стратегии реализация
+                                                                <br> # упорство
+                                                                <br> # цели
+                                                            </td>
+                                                            <td>
+                                                                <br>
+                                                                <li>Четко понимает цели и определяет способы их
+                                                                    достижения</li>
+                                                                <li>Преодолевает возникающие препятствия и трудности
+                                                                </li>
+                                                                <li>Регулярно сверяет текущие результаты с поставленными
+                                                                    целями</li>
+                                                                <li>Добивается результатов, в том числе, в условиях
+                                                                    цейтнота и ограниченных
+                                                                    ресурсов</li>
+                                                                <li>Связывает свои результаты с результатами
+                                                                    деятельности компании,
+                                                                    стремится внести свой вклад</li>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-section">
+                                            <tbody>
+                                                <tr class="title_group">
+                                                    <td colspan="4">
+                                                        <p>Смелость</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Приведите пример, когда вам пришлось принимать непопулярные
+                                                        решения?
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_25" value="Соответствует ожиданиям"
+                                                            id="i-67">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_25" value="Выше ожиданий" id="i-68">
+                                                    </td>
+                                                    <td><input type="radio" name="i_25" value="Ниже ожиданий" id="i-69">
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Если вы узнали о серьезных возникших проблемах ваши действия?
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_26" value="Соответствует ожиданиям"
+                                                            id="i-70">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_26" value="Выше ожиданий" id="i-71">
+                                                    </td>
+                                                    <td><input type="radio" name="i_26" value="Ниже ожиданий" id="i-72">
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Насколько вы зависите от мнения окружающих?</td>
+                                                    <td>
+                                                        <input type="radio" name="i_27" value="Соответствует ожиданиям"
+                                                            id="i-73">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_27" value="Выше ожиданий" id="i-74">
+                                                    </td>
+                                                    <td><input type="radio" name="i_27" value="Ниже ожиданий" id="i-75">
+                                                    </td>
+                                                </tr>
+                                                <tr class="components_table">
+                                                    <td>Готовы ли обсуждать способы решения или переходите к оперативным
+                                                        действиям?</td>
+                                                    <td>
+                                                        <input type="radio" name="i_17" value="Соответствует ожиданиям"
+                                                            id="i-76">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="i_17" value="Выше ожиданий" id="i-77">
+                                                    </td>
+                                                    <td><input type="radio" name="i_17" value="Ниже ожиданий" id="i-78">
+                                                    </td>
+                                                </tr>
+                                                <table id="hashtag">
+                                                    <tbody>
+                                                        <tr class="hashtag">
+                                                            <td colspan="4">
+                                                                <p>#влияние #убеждение #инициатива #действие #активность
+                                                                    #конфликт
+                                                                    #напряженность
+                                                                    #ответственность #открытость #прямота #проблемы
+                                                                    #препятствия
+                                                                    #решения
+                                                                    #решительность #скорость #самомотивация #амбиции
+                                                                    #уверенность</p>
+                                                            </td>
+                                                            <td>
+                                                                <div class="average-values"></div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <table class="table-information">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Смелость
+                                                            </td>
+                                                            <td>В трудные моменты берет ситуацию в свои руки, действует
+                                                                уверенно и
+                                                                независимо, не боится непопулярных мер, открыто заявляет
+                                                                свою позицию по
+                                                                проблемным вопросам, умеет держать удар
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <br> #влияние, убеждение
+                                                                <br> #инициатива, действие, активность
+                                                                <br> # конфликт, напряженность
+                                                                <br> # ответственность
+                                                                <br> # открытость, прямота
+                                                                <br> # проблемы, препятствия
+                                                                <br> # решения
+                                                                <br> # решительность и скорость
+                                                                <br> # самомотивация, амбиции
+                                                                <br> # уверенность
+                                                            </td>
+                                                            <td>
+                                                                <br>
+                                                                <li>Берет на себя лидерство в трудных ситуациях,
+                                                                    действует уверенно и
+                                                                    решительно</li>
+                                                                <li>Способен принимать непопулярные решения, если этого
+                                                                    требуют
+                                                                    обстоятельства</li>
+                                                                <li>Принимает меры в отношении тех, кто создает проблемы
+                                                                    или стабильно
+                                                                    неэффективен</li>
+                                                                <li>Открыто заявляет о существующих проблемах, нацелен
+                                                                    на поиск решения</li>
+                                                                <li>Проявляет независимость, не боится находиться в
+                                                                    оппозиции с мнением
+                                                                    большинства</li>
+                                                                <li>Умеет держать удар, отстаивая позицию в острой
+                                                                    полемике</li>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-info">
+                        <table class="table_pdf">
+                            <tbody class="container">
+                                <tr class="title_icon">
+                                    <td colspan="4" id="tdtitle">
+                                        <img src="img/strategy.svg" alt="icon_group">
+                                        <p class="title">Стратегия</p>
+                                        <span id="result">Оценка: <span class="result"></span></span>
+                                    </td>
+                                </tr>
+                                <tr class="expectation">
+                                    <td></td>
+                                    <td>соответствует <br> ожиданиям</td>
+                                    <td>выше <br> ожиданий</td>
+                                    <td>ниже <br> ожиданий</td>
+                                </tr>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Принятие решений</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Приведите пример решений, которые лежат в вашей зоне ответственности?
+                                                Какие
+                                                факторы
+                                                и аспекты вы учитываете?</td>
+                                            <td>
+                                                <input type="radio" name="i_28" value="Соответствует ожиданиям"
+                                                    id="i-79">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_28" value="Выше ожиданий" id="i-80">
+                                            </td>
+                                            <td><input type="radio" name="i_28" value="Ниже ожиданий" id="i-81"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Насколько данное решение было принято своевременно? Рассматривали ли вы
+                                                другие
+                                                варианты решений? Возможно, обсуждали с коллегами?</td>
+                                            <td>
+                                                <input type="radio" name="i_29" value="Соответствует ожиданиям"
+                                                    id="i-82">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_29" value="Выше ожиданий" id="i-83">
+                                            </td>
+                                            <td><input type="radio" name="i_29" value="Ниже ожиданий" id="i-84"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Перечислите критерии оценки правильности и успешности принятого решения?
+                                            <td>
+                                                <input type="radio" name="i_30" value="Соответствует ожиданиям"
+                                                    id="i-85">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_30" value="Выше ожиданий" id="i-86">
+                                            </td>
+                                            <td><input type="radio" name="i_30" value="Ниже ожиданий" id="i-87"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#аналитичность #гибкость #ответственность #результат #решения
+                                                            #системность
+                                                            #сроки
+                                                            #стратегия</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Принятие решений
+                                                    </td>
+                                                    <td>Принимает взвешенные, но своевременные решения, рассматривает
+                                                        варианты,
+                                                        учитывает последствия, доводит принятые решения до реализации
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # аналитичность
+                                                        <br> # гибкость, вариативность
+                                                        <br> # ответственность
+                                                        <br> # результат
+                                                        <br> # решения
+                                                        <br> # системность
+                                                        <br> # сроки
+                                                        <br> # стратегия
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Принимает взвешенные решения, учитывает разнообразные
+                                                            факторы влияния и
+                                                            аспекты ситуации</li>
+                                                        <li>Рассматривает несколько вариантов, не удовлетворяется
+                                                            решениями,
+                                                            лежащими на поверхности</li>
+                                                        <li>Своевременно принимает решения, независимо от обстоятельств
+                                                        </li>
+                                                        <li>Учитывает последствия принимаемых решений</li>
+                                                        <li>Формулирует критерии для оценки правильности и успешности
+                                                            решения</li>
+                                                        <li>Доводит принятые решения до реализации</li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Профессионализм</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Когда в последний раз вы повышали квалификацию?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_31" value="Соответствует ожиданиям"
+                                                    id="i-88">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_31" value="Выше ожиданий" id="i-89">
+                                            </td>
+                                            <td><input type="radio" name="i_31" value="Ниже ожиданий" id="i-90"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какие профессиональные мероприятия посещаете?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_32" value="Соответствует ожиданиям"
+                                                    id="i-91">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_32" value="Выше ожиданий" id="i-92">
+                                            </td>
+                                            <td><input type="radio" name="i_32" value="Ниже ожиданий" id="i-93"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какие технологии используете в своей работе?</td>
+                                            <td>
+                                                <input type="radio" name="i_33" value="Соответствует ожиданиям"
+                                                    id="i-94">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_33" value="Выше ожиданий" id="i-95">
+                                            </td>
+                                            <td><input type="radio" name="i_33" value="Ниже ожиданий" id="i-96"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#бизнес #рынок #коммерция #овлечение #опыт #помощь
+                                                            #содействие
+                                                            #саморазвитие
+                                                            #технологии
+                                                            #экспертиза #знания #навыки</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Профессионализм
+                                                    </td>
+                                                    <td>Обладает знаниями и навыками, необходимыми для качественного
+                                                        выполнения
+                                                        работы, является экспертом в своей области и систематически
+                                                        повышает
+                                                        квалификацию
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # бизнес, рынок, коммерция
+                                                        <br> # вовлечение
+                                                        <br> # опыт
+                                                        <br> # помощь, содействие
+                                                        <br> # саморазвитие
+                                                        <br> # технологии
+                                                        <br> # широта
+                                                        <br> # экспертиза, знания, навыки
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Обладает знаниями и навыками, необходимыми для качественного
+                                                            выполнения
+                                                            работы</li>
+                                                        <li>Систематически повышает квалификацию, наращивает экспертизу
+                                                        </li>
+                                                        <li>Осваивает передовые технологии в своей области и применяет
+                                                            их в работе
+                                                        </li>
+                                                        <li>Развивает свои знания о смежных областях и о
+                                                            функционировании бизнеса в
+                                                            целом</li>
+                                                        <li>Привлекает экспертизу других, если сталкивается с нехваткой
+                                                            собственных
+                                                            знаний и опыта</li>
+                                                        <li>Оказывает другим экспертную поддержку в вопросах,
+                                                            относящихся к его зоне
+                                                            компетенции</li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Системное мышление</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какие источники информации вы используете?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_34" value="Соответствует ожиданиям"
+                                                    id="i-97">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_34" value="Выше ожиданий" id="i-98">
+                                            </td>
+                                            <td><input type="radio" name="i_34" value="Ниже ожиданий" id="i-99"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Как систематизируете входящую информацию?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_35" value="Соответствует ожиданиям"
+                                                    id="i-100">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_35" value="Выше ожиданий" id="i-101">
+                                            </td>
+                                            <td><input type="radio" name="i_35" value="Ниже ожиданий" id="i-102"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Приведите пример необычной ситуации. Как вы подходили к ее анализу и
+                                                проверяли
+                                                свои
+                                                гипотезы и допущения?</td>
+                                            <td>
+                                                <input type="radio" name="i_36" value="Соответствует ожиданиям"
+                                                    id="i-103">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_36" value="Выше ожиданий" id="i-104">
+                                            </td>
+                                            <td><input type="radio" name="i_36" value="Ниже ожиданий" id="i-105"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#аналитичность #информация #данные #различия #разнообразие
+                                                            #системность
+                                                            #структурированность #широта</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Системное мышление
+                                                    </td>
+                                                    <td>Мыслит комплексно и структурированно, умеет работать с
+                                                        информацией,
+                                                        учитывает значимые факторы, выявляет взаимосвязи и
+                                                        закономерности, формирует
+                                                        целостное понимание ситуации
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # аналитичность
+                                                        <br> # информация, данные
+                                                        <br> # различия, разнообразие
+                                                        <br> # системность
+                                                        <br> # структурированность
+                                                        <br> # широта
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Собирает и комбинирует информацию из разных источников</li>
+                                                        <li>Структурирует данные, применяет логический подход</li>
+                                                        <li>Быстро обрабатывает большие объемы данных, умеет работать с
+                                                            неполной или
+                                                            противоречивой информацией</li>
+                                                        <li>Выявляет взаимосвязи и закономерности, в том числе,
+                                                            неочевидные</li>
+                                                        <li>Проверяет свои гипотезы и допущения</li>
+                                                        <li>Делает емкие выводы на основе анализа данных</li>
+                                                        <li>Изучает ситуацию в широком контексте, формирует целостное
+                                                            понимание
+                                                            происходящего</li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Стратегическое видение</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Участвуете ли вы в стратегическом планировании в вашей компании?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_37" value="Соответствует ожиданиям"
+                                                    id="i-106">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_37" value="Выше ожиданий" id="i-107">
+                                            </td>
+                                            <td><input type="radio" name="i_37" value="Ниже ожиданий" id="i-108"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Приведите ключевые стратегические приоритеты развития бизнеса компании
+                                                N?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_38" value="Соответствует ожиданиям"
+                                                    id="i-109">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_38" value="Выше ожиданий" id="i-110">
+                                            </td>
+                                            <td><input type="radio" name="i_38" value="Ниже ожиданий" id="i-111"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Учитываете ли вы возможные угрозы и риски?</td>
+                                            <td>
+                                                <input type="radio" name="i_39" value="Соответствует ожиданиям"
+                                                    id="i-112">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_39" value="Выше ожиданий" id="i-113">
+                                            </td>
+                                            <td><input type="radio" name="i_39" value="Ниже ожиданий" id="i-114"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какую систему целеполагания вы считаете эффективной?</td>
+                                            <td>
+                                                <input type="radio" name="i_40" value="Соответствует ожиданиям"
+                                                    id="i-115">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_40" value="Выше ожиданий" id="i-116">
+                                            </td>
+                                            <td><input type="radio" name="i_40" value="Ниже ожиданий" id="i-117"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#бизнес #планирование #приоритеты #риски #стратегия #цели</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Стратегическое видение
+                                                    </td>
+                                                    <td>Смотрит в будущее, определяет долгосрочные цели развития и пути
+                                                        их
+                                                        достижения, открывает и создает новые возможности для бизнеса,
+                                                        содействует
+                                                        устойчивому развитию
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # бизнес, рынок, коммерция
+                                                        <br> # планирование
+                                                        <br> # приоритеты
+                                                        <br> # риски
+                                                        <br> # стратегия
+                                                        <br> # стратегии реализация
+                                                        <br> # цели
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Смотрит в будущее, строит долгосрочные планы и прогнозы</li>
+                                                        <li>Определяет стратегические приоритеты развития бизнеса</li>
+                                                        <li>Намечает пути достижения стратегических целей</li>
+                                                        <li>Подчиняет текущие действия долгосрочным приоритетам</li>
+                                                        <li>Предусматривает возможные угрозы и риски, продумывает меры
+                                                            по их
+                                                            нейтрализации</li>
+                                                        <li>Открывает и создает новые возможности для бизнеса</li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-info">
+                        <table class="table_pdf">
+                            <tbody class="container">
+                                <tr class="title_icon">
+                                    <td colspan="4" id="tdtitle">
+                                        <img src="img/tasks.svg" alt="icon_group">
+                                        <p class="title">Задачи</p>
+                                        <span id="result">Оценка: <span class="result"></span></span>
+                                    </td>
+                                </tr>
+                                <tr class="expectation">
+                                    <td></td>
+                                    <td>соответствует <br> ожиданиям</td>
+                                    <td>выше <br> ожиданий</td>
+                                    <td>ниже <br> ожиданий</td>
+                                </tr>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Постановка и совершенствование рабочих процессов</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Приведите пример оптимизации бизнес-процесса вашей функции?</td>
+                                            <td>
+                                                <input type="radio" name="i_41" value="Соответствует ожиданиям"
+                                                    id="i-118">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_41" value="Выше ожиданий" id="i-119">
+                                            </td>
+                                            <td><input type="radio" name="i_41" value="Ниже ожиданий" id="i-120"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Насколько они эффективны?</td>
+                                            <td>
+                                                <input type="radio" name="i_42" value="Соответствует ожиданиям"
+                                                    id="i-121">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_42" value="Выше ожиданий" id="i-122">
+                                            </td>
+                                            <td><input type="radio" name="i_42" value="Ниже ожиданий" id="i-123"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какие ресурсы, технологии вы использовали для оптимизации рабочих
+                                                процессов?
+                                            <td>
+                                                <input type="radio" name="i_43" value="Соответствует ожиданиям"
+                                                    id="i-124">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_43" value="Выше ожиданий" id="i-125">
+                                            </td>
+                                            <td><input type="radio" name="i_43" value="Ниже ожиданий" id="i-126"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Применяете ли лучшие практики для повышения эффективности рабочих
+                                                процессов? На
+                                                какие компании вы ориентируетесь?
+                                            <td>
+                                                <input type="radio" name="i_44" value="Соответствует ожиданиям"
+                                                    id="i-127">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_44" value="Выше ожиданий" id="i-128">
+                                            </td>
+                                            <td><input type="radio" name="i_44" value="Ниже ожиданий" id="i-129"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#инновации #координация #лучшиепрактики #операции
+                                                            #оптимизация
+                                                            #процессы
+                                                            #системы
+                                                            #стандарты #регламенты #ресурсы</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Постановка и совершенствование рабочих процессов
+                                                    </td>
+                                                    <td>Внедряет процессы, системы и регламенты, повышающие
+                                                        эффективность работы,
+                                                        оптимизирует и совершенствует рабочие процессы, обеспечивает их
+                                                        стабильность
+                                                        и согласованность
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # инновации, передовые идеи и тенденции
+                                                        <br> # координация
+                                                        <br> # лучшие практики
+                                                        <br> # операции
+                                                        <br> # оптимизация, улучшение
+                                                        <br> # процессы, системы, стандарты, регламенты
+                                                        <br> # ресурсы
+                                                        <br> # системность
+                                                        <br> # стратегии реализация
+                                                        <br> # технологии
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Определяет, какие ресурсы, процессы и регламенты необходимы
+                                                            для
+                                                            выполнения работы</li>
+                                                        <li>Оценивает эффективность существующих процессов, принимает
+                                                            меры по их
+                                                            оптимизации</li>
+                                                        <li>Внедряет понятные и прозрачные рабочие процессы, системы и
+                                                            регламенты
+                                                        </li>
+                                                        <li>Исключает дублирование функций, процессов и систем</li>
+                                                        <li>Обеспечивает стабильность и согласованность рабочих
+                                                            процессов</li>
+                                                        <li>Применяет лучшие практики для повышения эффективности
+                                                            рабочих процессов
+                                                        </li>
+                                                        <li>Систематически модернизирует и совершенствует рабочие
+                                                            процессы и
+                                                            технологии</li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Управление качеством</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Вы требовательны к себе и окружающим?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_45" value="Соответствует ожиданиям"
+                                                    id="i-130">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_45" value="Выше ожиданий" id="i-131">
+                                            </td>
+                                            <td><input type="radio" name="i_45" value="Ниже ожиданий" id="i-132"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Прикладываете ли вы усилия, чтобы исключить недоработки и добиться
+                                                требуемого
+                                                качества результата?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_46" value="Соответствует ожиданиям"
+                                                    id="i-133">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_46" value="Выше ожиданий" id="i-134">
+                                            </td>
+                                            <td><input type="radio" name="i_46" value="Ниже ожиданий" id="i-135"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Помогаете ли вы коллегам\подчиненным отслеживать качество выполненной
+                                                работы?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_47" value="Соответствует ожиданиям"
+                                                    id="i-136">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_47" value="Выше ожиданий" id="i-137">
+                                            </td>
+                                            <td><input type="radio" name="i_47" value="Ниже ожиданий" id="i-138"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какие знаете инструменты\технологии позволяющие повысить качество?</td>
+                                            <td>
+                                                <input type="radio" name="i_48" value="Соответствует ожиданиям"
+                                                    id="i-139">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_48" value="Выше ожиданий" id="i-140">
+                                            </td>
+                                            <td><input type="radio" name="i_48" value="Ниже ожиданий" id="i-141"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#внимательность #неравнодушие #операции #оптимизация
+                                                            #улучшение
+                                                            #помощь
+                                                            #содействие
+                                                            #процессы #системы #стандарты #регламенты #результат
+                                                            #сотрудники
+                                                            #подчиненные
+                                                            #сроки</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Управление качеством
+                                                    </td>
+                                                    <td>Требователен и настойчив в вопросах качества, не мирится с
+                                                        недоработками и
+                                                        посредственным исполнением, находит баланс между качественным и
+                                                        своевременным выполнением работы
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # внимательность, неравнодушие
+                                                        <br> # операции
+                                                        <br> # оптимизация, улучшение
+                                                        <br> # помощь, содействие
+                                                        <br> # процессы, системы, стандарты, регламенты
+                                                        <br> # результат
+                                                        <br> # сотрудники, подчиненные
+                                                        <br> # сроки
+                                                        <br> # упорство
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Проявляет требовательность в вопросах качества, не мирится с
+                                                            посредственным исполнением</li>
+                                                        <li>Прикладывает усилия, чтобы исключить недоработки и добиться
+                                                            требуемого
+                                                            качества результата</li>
+                                                        <li>Находит разумный баланс между требованиями к качеству и
+                                                            срокам
+                                                            выполнения работы</li>
+                                                        <li>Принимает меры по систематическому повышению качества работы
+                                                        </li>
+                                                        <li>Помогает сотрудникам самостоятельно отслеживать качество
+                                                            своей работы
+                                                        </li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Решение проблем</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Приведите пример проблемной ситуации? Как быстро удалось понять
+                                                причины возникновения?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_49" value="Соответствует ожиданиям"
+                                                    id="i-142">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_49" value="Выше ожиданий" id="i-143">
+                                            </td>
+                                            <td><input type="radio" name="i_49" value="Ниже ожиданий" id="i-144"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какие решения были предложены вами для ее решения?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_50" value="Соответствует ожиданиям"
+                                                    id="i-145">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_50" value="Выше ожиданий" id="i-146">
+                                            </td>
+                                            <td><input type="radio" name="i_50" value="Ниже ожиданий" id="i-147"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какие выводы вы сделали?</td>
+                                            <td>
+                                                <input type="radio" name="i_51" value="Соответствует ожиданиям"
+                                                    id="i-148">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_51" value="Выше ожиданий" id="i-149">
+                                            </td>
+                                            <td><input type="radio" name="i_51" value="Ниже ожиданий" id="i-150"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>##аналитичность #гибкость #вариативность #информация #данные
+                                                            #находчивость
+                                                            #изобретательность
+                                                            #проблемы #препятствия #решения #решительность #скорость</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Решение проблем
+                                                    </td>
+                                                    <td>Быстро схватывает суть проблемы и генерирует варианты решения,
+                                                        находит выход
+                                                        из сложных ситуаций, предотвращает наступление проблем
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # аналитичность
+                                                        <br> # гибкость, вариативность
+                                                        <br> # информация, данные
+                                                        <br> # находчивость, изобретательность
+                                                        <br> # проблемы, препятствия
+                                                        <br> # решения
+                                                        <br> # решительность и скорость
+                                                        <br> # структурированность
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Быстро оценивает ситуацию, определяет суть проблемы, ее
+                                                            причины и
+                                                            источники</li>
+                                                        <li>Понимает, каких данных не хватает для решения, и умеет их
+                                                            найти</li>
+                                                        <li>Концентрируется не на проблеме, а на поиске решения</li>
+                                                        <li>Способен по-новому взглянуть на ситуацию, предложить
+                                                            нестандартное
+                                                            решение</li>
+                                                        <li>Успешно находит выход из сложившейся ситуации</li>
+                                                        <li>Предупреждает наступление проблем</li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                                <table class="table-section">
+                                    <tbody>
+                                        <tr class="title_group">
+                                            <td colspan="4">
+                                                <p>Управление исполнением</p>
+                                            </td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Опишите процесс постановки задач подчиненным?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_52" value="Соответствует ожиданиям"
+                                                    id="i-151">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_52" value="Выше ожиданий" id="i-152">
+                                            </td>
+                                            <td><input type="radio" name="i_52" value="Ниже ожиданий" id="i-153"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Обсуждаете ли вы предварительно план выполнения?
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_53" value="Соответствует ожиданиям"
+                                                    id="i-154">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_53" value="Выше ожиданий" id="i-155">
+                                            </td>
+                                            <td><input type="radio" name="i_53" value="Ниже ожиданий" id="i-156"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Как часто проверяете ход выполнения поставленных задач?</td>
+                                            <td>
+                                                <input type="radio" name="i_54" value="Соответствует ожиданиям"
+                                                    id="i-157">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_54" value="Выше ожиданий" id="i-158">
+                                            </td>
+                                            <td><input type="radio" name="i_54" value="Ниже ожиданий" id="i-159"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>Какую систему отчетности считаете эффективной?</td>
+                                            <td>
+                                                <input type="radio" name="i_55" value="Соответствует ожиданиям"
+                                                    id="i-160">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_55" value="Выше ожиданий" id="i-161">
+                                            </td>
+                                            <td><input type="radio" name="i_55" value="Ниже ожиданий" id="i-162"></td>
+                                        </tr>
+                                        <tr class="components_table">
+                                            <td>В какой форме и как часто даете обратную связь?</td>
+                                            <td>
+                                                <input type="radio" name="i_56" value="Соответствует ожиданиям"
+                                                    id="i-163">
+                                            </td>
+                                            <td>
+                                                <input type="radio" name="i_56" value="Выше ожиданий" id="i-164">
+                                            </td>
+                                            <td><input type="radio" name="i_56" value="Ниже ожиданий" id="i-165"></td>
+                                        </tr>
+                                        <table id="hashtag">
+                                            <tbody>
+                                                <tr class="hashtag">
+                                                    <td colspan="4">
+                                                        <p>#задачи #коммуникация #контроль #координация #обратнаясвязь
+                                                            #помощь #содействие #результат #ресурсы #сроки #цели</p>
+                                                    </td>
+                                                    <td>
+                                                        <div class="average-values"></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-information">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Управление исполнением
+                                                    </td>
+                                                    <td>Задает направление действий и распределяет задачи, ресурсы и
+                                                        ответственность, координирует работу исполнителей, контролирует
+                                                        ход работ и
+                                                        оценивает результаты
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br> # задачи
+                                                        <br> # коммуникация
+                                                        <br> # контроль
+                                                        <br> # координация
+                                                        <br> # обратная связь
+                                                        <br> # операции
+                                                        <br> # оптимизация, улучшение
+                                                        <br> # помощь, содействие
+                                                        <br> # процессы, системы, стандарты, регламенты
+                                                        <br> # результат
+                                                        <br> # ресурсы
+                                                        <br> # сотрудники, подчиненные
+                                                        <br> # сроки
+                                                        <br> # цели
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        <li>Обозначает общее направление действий, помогая сотрудникам
+                                                            увидеть
+                                                            задачу в широком контексте</li>
+                                                        <li>Ставит перед исполнителями четкие задачи, обозначает сроки
+                                                            выполнения и
+                                                            требования к результату</li>
+                                                        <li>Распределяет ответственность и координирует работу
+                                                            исполнителей</li>
+                                                        <li>Обеспечивает наличие необходимых ресурсов для выполнения
+                                                            задачи и
+                                                            добивается их оптимального использования</li>
+                                                        <li>Выстраивает эффективную систему коммуникации и
+                                                            информирования всех
+                                                            участников рабочего процесса</li>
+                                                        <li>Организует рабочий процесс таким образом, чтобы он не
+                                                            требовал
+                                                            постоянного руководящего контроля и вмешательства</li>
+                                                        <li>Оценивает промежуточные и конечный результат и дает обратную
+                                                            связь</li>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </tbody>
+                                </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </body>
 <script src="./js/pdf.js"></script>
+
 </html>

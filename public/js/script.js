@@ -1,103 +1,136 @@
-// const lastName = document.getElementById('lastName')
-// const firstName = document.getElementById('firstName')
-// const middleName = document.getElementById('middleName')
-
-// const lastNameCD = document.getElementById('lastName-cd')
-// const firstNameCD = document.getElementById('firstName-cd')
-// const middleNameCD = document.getElementById('middleName-cd')
-
-// const job_field = document.getElementById('job-field')
-
-// const comment = document.getElementById('comment-field')
-
-// console.log("jsPDF loaded");
-
-// function downloadPDF() {
-//     var iframe = document.getElementById('iframe');
-
-//     // Сохраняем текущую высоту iframe
-//     var originalHeight = iframe.style.height;
-
-//     iframe.onload = function () {
-//         if (iframe.contentDocument.readyState === 'complete') {
-//             // Устанавливаем высоту iframe в 0
-//             iframe.style.height = '0';
-
-//             var iframeContent = iframe.contentWindow.document.body;
-//             var pdf = new jsPDF();
-
-//             // Обрабатываем контент в iframe
-//             html2canvas(iframeContent).then(function (canvas) {
-//                 var imgData = canvas.toDataURL('image/png');
-//                 pdf.addImage(imgData, 'PNG', 10, 10, 280, 0);
-
-//                 // Восстанавливаем исходную высоту iframe
-//                 iframe.style.height = originalHeight;
-
-//                 // Сохраняем PDF
-//                 pdf.save(lastNameCD + firstNameCD + middleNameCD + '.pdf');
-//             });
-//         }
-//     };
-
-//     // Загружаем iframe, если он еще не загружен
-//     if (iframe.contentDocument.readyState === 'complete') {
-//         iframe.src = iframe.src;
-//     }
-// }
-
-
-// document.getElementById('sendButton').onclick = function () {
-//     let wspFrame = document.getElementById('iframe').contentWindow;
-
-//     if (lastName.value.trim() === "" || firstName.value.trim() === "" || lastNameCD.value.trim() === "" || firstNameCD.value.trim() === "" || job_field.value.trim() === "") {
-//         alert("Вы ввели не все данные...");
-//         return;
-//     } else {
-//         itemSet();
-//         saveRadioState();
-//         reloadIFrame();
-//         downloadPDF();
-//     }
-
-//     function reloadIFrame() {
-//         document.getElementById('iframe').contentWindow.location.reload();
-//     }
-
-//     function itemSet() {
-//         localStorage.setItem('lastname', lastName.value);
-//         localStorage.setItem('firstname', firstName.value);
-//         localStorage.setItem('middlename', middleName.value);
-
-//         localStorage.setItem('lastNameCD', lastNameCD.value);
-//         localStorage.setItem('firstNameCD', firstNameCD.value);
-//         localStorage.setItem('middleNameCD', middleNameCD.value);
-
-//         localStorage.setItem('job-field', job_field.value);
-
-//         localStorage.setItem('comment', comment.value);
-//     }
-
-//     function saveRadioState() {
-//         for (var i = 1; i <= 168; i++) {
-//             var radioId = "i-" + i;
-//             var radioElement = document.getElementById(radioId);
-
-//             if (radioElement) {
-//                 localStorage.setItem(radioId, radioElement.checked);
-//             }
-//         }
-//     }
-// };
-
-// script.js
-
-// script.js
-
 document.getElementById('sendButton').onclick = async function () {
     await submitForm();
-    
+
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    var quizPosts = document.querySelectorAll('.quiz-post');
+
+    quizPosts.forEach(function (quizPost) {
+        var quizElementsList = quizPost.querySelectorAll('.quiz-element');
+        var resultDiv = quizPost.querySelector('.result');
+
+        quizElementsList.forEach(function (quizElement) {
+            var quizElementsListInner = quizElement.querySelectorAll('.quiz-elements, .quiz-elements-align');
+            var averageOutputDiv = quizElement.querySelector('.average-value');
+
+            quizElementsListInner.forEach(function (quizElements) {
+                var radioButtons = quizElements.querySelectorAll('input[type="radio"]');
+
+                radioButtons.forEach(function (radioButton) {
+                    radioButton.addEventListener('change', function () {
+                        updateAverage();
+                        updateResult();
+                        updateHeadingResult();
+                    });
+                });
+            });
+
+
+            function updateAverage() {
+                var sumValues = 0;
+                var countChecked = 0;
+
+                quizElementsListInner.forEach(function (quizElements) {
+                    var checkedRadioButton = quizElements.querySelector('input[type="radio"]:checked');
+                    if (checkedRadioButton) {
+                        sumValues += parseInt(checkedRadioButton.value);
+                        countChecked++;
+                    }
+                });
+
+                if (countChecked > 0) {
+                    var averageValue = Math.round(sumValues / countChecked);
+                    var averageText;
+
+                    if (averageValue >= 0 && averageValue <= 4) {
+                        averageText = 'Ниже ожиданий';
+                    } else if (averageValue >= 5 && averageValue <= 9) {
+                        averageText = 'Соответствует ожиданиям';
+                    } else {
+                        averageText = 'Выше ожиданий';
+                    }
+
+                    if (averageOutputDiv) {
+                        averageOutputDiv.textContent = averageText;
+                        averageOutputDiv.dataset.value = averageValue;
+                    }
+                } else {
+                    if (averageOutputDiv) {
+                        averageOutputDiv.textContent = 'Нет данных';
+                    }
+                }
+            }
+
+            function updateResult() {
+                var totalSum = 0;
+                var totalCount = 0;
+
+                quizElementsList.forEach(function (quizElement) {
+                    var averageOutput = quizElement.querySelector('.average-value');
+                    var averageValue = parseInt(averageOutput.dataset.value);
+
+                    if (!isNaN(averageValue)) {
+                        totalSum += averageValue;
+                        totalCount++;
+                    }
+
+                    var tableInformation = quizElement.querySelector('.table-information');
+                    if (tableInformation) {
+                        if (averageValue === 10) {
+                            tableInformation.style.display = 'block';
+                        } else {
+                            tableInformation.style.display = 'none';
+                        }
+                    }
+                });
+
+                var averageResult = Math.round(totalSum / totalCount);
+
+                if (!isNaN(averageResult) && resultDiv) {
+                    resultDiv.textContent = averageResult;
+                }
+            }
+        });
+    }
+    )
+    var radioButtons = document.querySelectorAll('input[type="radio"]');
+    radioButtons.forEach(function (radioButton) {
+        radioButton.addEventListener('change', function () {
+            updateSendButtonState();
+        });
+    });
+
+    function updateSendButtonState() {
+        var allGroupsHaveSelection = true;
+
+        for (var i = 1; i <= 56; i++) {
+            if (i === 16) {
+                continue;
+            }
+
+            var groupName = 'i_' + i;
+            var groupButtons = document.querySelectorAll('input[type="radio"][name="' + groupName + '"]');
+            var groupHasSelection = Array.from(groupButtons).some(function (radioButton) {
+                return radioButton.checked;
+            });
+
+            if (!groupHasSelection) {
+                allGroupsHaveSelection = false;
+                break;
+            }
+        }
+
+        var sendButton = document.getElementById('sendButton');
+
+        if (allGroupsHaveSelection) {
+            sendButton.removeAttribute('disabled');
+        } else {
+            sendButton.setAttribute('disabled', 'true');
+        }
+    }
+});
+
 
 async function submitForm() {
     const lastName = document.getElementById('lastName').value;
@@ -115,6 +148,27 @@ async function submitForm() {
         radioButtonsState[radioButton.id] = radioButton.checked;
     });
 
+
+    const averageValues = [];
+
+    const quizElementsList = document.querySelectorAll('.quiz-element');
+    quizElementsList.forEach(quizElement => {
+        const averageOutput = quizElement.querySelector('.average-value');
+        const averageValue = averageOutput ? averageOutput.textContent : 'Нет данных';
+        averageValues.push(averageValue);
+
+    });
+    const resultDivs = [];
+
+    const quizPostList = document.querySelectorAll('.quiz-post');
+    quizPostList.forEach(quizElement => {
+        const resultOutput = quizElement.querySelector('.result');
+        const resultDiv = resultOutput ? resultOutput.textContent : 'Нет данных';
+        resultDivs.push(resultDiv);
+
+    });
+
+
     fetch('/submit', {
         method: 'POST',
         headers: {
@@ -129,7 +183,9 @@ async function submitForm() {
             middleNameCd,
             job,
             comment,
-            radioButtonsState
+            radioButtonsState,
+            averageValues,
+            resultDivs,
         })
     }).then(response => {
         if (!response.ok) {
@@ -149,5 +205,5 @@ async function submitForm() {
         console.error('There was a problem with the fetch operation:', error);
     });
 
-    
+
 }

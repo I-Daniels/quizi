@@ -118,7 +118,7 @@ a:visited {
 }
 
 .heading {
-    width: 100%;
+    width: 105%;
     position: relative;
     display: flex;
     padding: 2% 2% 2% 2%;
@@ -222,6 +222,9 @@ a:visited {
 }
 
 #heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     padding-left: 80px;
     margin: 0 0 0 0;
     padding-right: 0;
@@ -229,12 +232,17 @@ a:visited {
 }
 
 #heading p {
-    width: 105%;
+    width: 120%;
 }
 
 @media (width < 950px) {
     #heading p {
-        width: 115%;
+        width: 130%;
+    }
+}
+@media (width < 620px) {
+    #heading p {
+        width: 150%;
     }
 }
 
@@ -251,6 +259,7 @@ a:visited {
     letter-spacing: 1.8px;
     text-transform: uppercase;
 }
+
 
 
 @media (width < 1129px) {
@@ -419,6 +428,83 @@ a:visited {
     }
 }
 
+.average-value {
+    color: #ffffff;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.32px;
+}
+
+@media (width < 1129px) {
+    .average-value {
+        color: #ffffff;
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0.32px;
+    }
+}
+@media (width < 620px) {
+    .average-value {
+        color: #ffffff;
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0.32px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+.result {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0.32px;
+}
+
+p > .result {
+    float: right;
+    align-items: center;
+  }
+
+
+
+@media (width < 1129px) {
+    .result {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0.32px;
+    }
+}
+@media (width < 620px) {
+    .result {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0.32px;
+    }
+}
+
 .quiz-element p {
     width: 50%;
     flex-shrink: 0;
@@ -430,6 +516,7 @@ a:visited {
     line-height: 130%;
     /* 20.8px */
 }
+
 
 @media (width < 740px) {
     .quiz-element p {
@@ -741,6 +828,20 @@ a:visited {
     font-weight: 600;
 }
 
+#sendButton:disabled {
+    display: inline-flex;
+    padding: 14px 20px;
+    border-radius: 14px;
+    background: #aaaaaa;
+    color: black;
+    border: 1px solid #aaaaaa;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .btn:active {
     display: inline-flex;
     padding: 14px 20px;
@@ -748,6 +849,19 @@ a:visited {
     background: #FFF;
     color: black;
     border: 1px solid #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.btn:disabled {
+    display: inline-flex;
+    padding: 14px 20px;
+    border-radius: 14px;
+    background: #aaaaaa;
+    color: black;
+    border: 1px solid #aaaaaa;
     text-align: center;
     font-family: Montserrat;
     font-size: 16px;
@@ -968,5 +1082,55 @@ a:visited {
 @media (width < 620px) {
     #job-field {
         width: 95%;
+    }
+}
+
+/* -------------------------------------------------------------------- */
+
+.table-information {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: center;
+    display: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.table-information tr, td {
+
+    padding: 8px;
+    text-align: left;
+}
+
+.table-information tr td {
+    align-self: stretch;
+    color: #dddddd;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media (width < 620px) {
+    .table-information tr td {
+        color: #dddddd;
+        font-family: Montserrat;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 150%;
+        outline: none;
+        background: none;
+    }
+}
+@media (width <= 320px) {
+    .table-information tr td {
+        color: #dddddd;
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 150%;
+        outline: none;
+        background: none;
+        width: 10%;
     }
 }
