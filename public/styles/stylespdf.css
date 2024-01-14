@@ -189,10 +189,10 @@ table.table_pdf th {
 }
 
 #tdtitle span {
+    text-align: center;
     padding-top: 3px;
     color: #003081;
     font-family: Garamond;
-    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -201,24 +201,18 @@ table.table_pdf th {
 }
 
 #result {
-    padding-top: 3px;
-    color: #003081;
-    font-family: Garamond;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.9px;
-    white-space: nowrap;
+    font-family: Montserrat inherit;
     border: 1px solid #003081;
     padding: 5px 10px;
+    width: 150px;
+    height: 25px;
+    vertical-align: top;
 }
 
 .average-values {
-    text-align: center;
     font-family: Montserrat;
     margin-bottom: 20px;
-    border: 1px solid #003081;
+    border: 1px solid #000000;
     padding: 5px 10px;
     width: 150px;
     height: 50px;
