@@ -74,15 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         totalSum += averageValue;
                         totalCount++;
                     }
-
-                    var tableInformation = quizElement.querySelector('.table-information');
-                    if (tableInformation) {
-                        if (averageValue === 10) {
-                            tableInformation.style.display = 'block';
-                        } else {
-                            tableInformation.style.display = 'none';
-                        }
-                    }
                 });
 
                 var averageResult = Math.round(totalSum / totalCount);

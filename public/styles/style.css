@@ -429,6 +429,7 @@ a:visited {
 }
 
 .average-value {
+    display: none;
     color: #ffffff;
     width: 100%;
     font-family: Montserrat;
@@ -441,6 +442,7 @@ a:visited {
 
 @media (width < 1129px) {
     .average-value {
+        display: none;
         color: #ffffff;
         width: 100%;
         font-family: Montserrat;
@@ -453,6 +455,7 @@ a:visited {
 }
 @media (width < 620px) {
     .average-value {
+        display: none;
         color: #ffffff;
         width: 100%;
         font-family: Montserrat;
@@ -466,6 +469,7 @@ a:visited {
     }
 }
 .result {
+    display: none;
     color: #ffffff;
     font-family: Montserrat;
     font-size: 16px;
@@ -484,6 +488,7 @@ p > .result {
 
 @media (width < 1129px) {
     .result {
+        display: none;
         color: #ffffff;
         font-family: Montserrat;
         font-size: 14px;
@@ -495,6 +500,7 @@ p > .result {
 }
 @media (width < 620px) {
     .result {
+        display: none;
         color: #ffffff;
         font-family: Montserrat;
         font-size: 12px;
@@ -1088,6 +1094,7 @@ p > .result {
 /* -------------------------------------------------------------------- */
 
 .table-information {
+    display: none;
     width: 100%;
     border-collapse: collapse;
     justify-content: center;
@@ -1097,7 +1104,6 @@ p > .result {
 }
 
 .table-information tr, td {
-
     padding: 8px;
     text-align: left;
 }
