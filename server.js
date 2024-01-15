@@ -11,9 +11,10 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.post('/submit', async (req, res) => {
-  const browser = await chromium.launch({
-    headless: true,
-  });
+  try {
+    const browser = await chromium.launch({
+      headless: true,
+    });
 
   const {
     lastName,
@@ -54,14 +55,12 @@ app.post('/submit', async (req, res) => {
   await page.waitForTimeout(2000);
 
   const pdfBuffer = await page.pdf({
-    margin: { top: 50, bottom: 50 }
+    margin: { top: 50, bottom: 50 },
   });
 
   await browser.close();
 
-  const sanitizedFilename = sanitize(
-    `${lastNameCd}.pdf`
-  );
+  const sanitizedFilename = sanitize(`${lastNameCd}.pdf`);
   const encodedFilename = encodeURIComponent(sanitizedFilename);
 
   res.setHeader('Content-Type', 'application/pdf');
@@ -71,6 +70,10 @@ app.post('/submit', async (req, res) => {
   );
 
   res.send(pdfBuffer);
+} catch (error) {
+  console.error('Ошибка обработки запроса:', error);
+  res.status(500).send('Internal Server Error');
+}
 });
 
 app.listen(port, () => console.log(`Сервер работает на порту ${port}`));
