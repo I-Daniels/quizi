@@ -130,6 +130,10 @@ table.table_pdf th {
     width: 18%;
 }
 
+.components_table {
+    display: none;
+}
+
 .components_table td:not(:first-child) {
     width: 18%;
     text-align: center;
@@ -154,6 +158,10 @@ table.table_pdf th {
     letter-spacing: 0.18px;
 }
 
+.title_group tr:last-child {
+    float: right;
+}
+
 
 .title_icon td {
     display: flex;
@@ -171,7 +179,7 @@ table.table_pdf th {
 }
 
 .title {
-    width: 100%;
+    width: 20%;
     padding-top: 3px;
     color: #003081;
     font-family: Garamond;
@@ -210,6 +218,7 @@ table.table_pdf th {
 }
 
 .average-values {
+    float: right;
     text-align: center;
     font-family: Montserrat;
     margin-bottom: 20px;
@@ -217,6 +226,10 @@ table.table_pdf th {
     padding: 5px 10px;
     width: 150px;
     height: 50px;
+}
+
+.hashtag {
+    display: none;
 }
 
 #hashtag {
@@ -279,6 +292,9 @@ table.table_pdf th {
     margin-bottom: 40px;
     border-bottom: 1px solid black;
     padding-bottom: 20px;
+}
+.table-information td:first-child {
+    width: 25%;
 }
 
 .table-info {

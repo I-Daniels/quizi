@@ -25,7 +25,6 @@ app.post('/submit', async (req, res) => {
     middleNameCd,
     job,
     comment,
-    radioButtonsState,
     averageValues,
     resultDivs,
   } = req.body;
@@ -46,8 +45,6 @@ app.post('/submit', async (req, res) => {
       middleNameCd
     )}&job=${encodeURIComponent(job)}&comment=${encodeURIComponent(
       comment
-    )}&radioButtonsState=${encodeURIComponent(
-      JSON.stringify(radioButtonsState)
     )}&averageValues=${encodeURIComponent(JSON.stringify(averageValues)
     )}&resultDivs=${encodeURIComponent(JSON.stringify(resultDivs))}`
   );

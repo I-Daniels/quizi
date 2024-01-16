@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }, 1000);
 
-    // Вставка данных
     const averageValues = JSON.parse(averageValuesJSON);
     const averageValuesElements = document.querySelectorAll('.average-values');
     updateElements(averageValuesElements, averageValues, 'average-values');

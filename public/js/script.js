@@ -133,13 +133,6 @@ async function submitForm() {
     const job = document.getElementById('job-field').value;
     const comment = document.getElementById('comment-field').value;
 
-    const radioButtonsState = {};
-    const radioButtons = document.querySelectorAll('input[type="radio"]');
-    radioButtons.forEach(radioButton => {
-        radioButtonsState[radioButton.id] = radioButton.checked;
-    });
-
-
     const averageValues = [];
 
     const quizElementsList = document.querySelectorAll('.quiz-element');
@@ -174,7 +167,6 @@ async function submitForm() {
             middleNameCd,
             job,
             comment,
-            radioButtonsState,
             averageValues,
             resultDivs,
         })
