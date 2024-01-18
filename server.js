@@ -73,7 +73,7 @@ const sanitize = require('sanitize-filename');
 const { chromium } = require('playwright');
 
 const app = express();
-const port = 3076;
+const port = 3000;
 
 app.use(express.static('public'));
 app.use(bodyParser.json());
@@ -99,7 +99,7 @@ app.post('/submit', async (req, res) => {
 
   const page = await browser.newPage();
   await page.goto(
-    `http://localhost:3076/pagepdf.html?lastName=${encodeURIComponent(
+    `http://localhost:3000/pagepdf.html?lastName=${encodeURIComponent(
       lastName
     )}&firstName=${encodeURIComponent(
       firstName
