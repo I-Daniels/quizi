@@ -2,73 +2,35 @@ document.getElementById("sendButton").onclick = async function () {
   await submitForm();
 };
 
-document.addEventListener('DOMContentLoaded', function() {
-  const hrButton = document.getElementById('hrButton');
-  const lineManagerButton = document.getElementById('lineManagerButton');
-  const selectManage = document.getElementById('selectManage');
-  const hrQuiz = document.getElementById('hrquiz');
-  const LMQuiz = document.getElementById('LMquiz');
+document.addEventListener("DOMContentLoaded", function () {
+  const hrButton = document.getElementById("hrButton");
+  const lineManagerButton = document.getElementById("lineManagerButton");
+  const selectManage = document.getElementById("selectManage");
+  const hrQuiz = document.getElementById("hrquiz");
+  const LMQuiz = document.getElementById("LMquiz");
 
   function showHRQuestions() {
-      selectManage.parentNode.removeChild(selectManage);
-      hrQuiz.style.display = 'flex';
-      document.body.style.overflow = 'auto';
-      LMQuiz.parentNode.removeChild(LMQuiz);
+    selectManage.parentNode.removeChild(selectManage);
+    hrQuiz.style.display = "flex";
+    document.body.style.overflow = "auto";
+    LMQuiz.parentNode.removeChild(LMQuiz);
   }
 
   function showLineManagerQuestions() {
-      selectManage.parentNode.removeChild(selectManage);
-      LMQuiz.style.display = 'flex';
-      document.body.style.overflow = 'auto';
-      hrQuiz.parentNode.removeChild(hrQuiz);
+    selectManage.parentNode.removeChild(selectManage);
+    LMQuiz.style.display = "flex";
+    document.body.style.overflow = "auto";
+    hrQuiz.parentNode.removeChild(hrQuiz);
   }
 
-  hrButton.addEventListener('click', function() {
-      showHRQuestions();
+  hrButton.addEventListener("click", function () {
+    showHRQuestions();
   });
 
-  lineManagerButton.addEventListener('click', function() {
-      showLineManagerQuestions();
+  lineManagerButton.addEventListener("click", function () {
+    showLineManagerQuestions();
   });
 });
-
-function updateSendButtonState() {
-  var sendButton = document.getElementById("sendButton");
-  var sendButtonHR = document.getElementById("sendButtonHR");
-  var hrQuiz = document.getElementById("hrquiz");
-
-  if (hrQuiz) {
-    var sendButtonHRGroups = ["i_1", "i_2", "i_3", "i_4", "i_5", "i_6", "i_7", "i_8", "i_9", "i_10", "i_11", "i_12", "i_13", "i_14", "i_15", "i_25", "i_26", "i_27", "i_17", "i_28", "i_29", "i_30", "i_31", "i_32", "i_33", "i_41", "i_42", "i_43", "i_44", "i_45", "i_46", "i_47", "i_48", "i_52", "i_53", "i_54", "i_55", "i_56"];
-
-    var sendButtonHRAllChecked = sendButtonHRGroups.every(function(groupName) {
-      var groupButtons = document.querySelectorAll('input[type="radio"][name="' + groupName + '"]');
-      return Array.from(groupButtons).some(function(radioButton) {
-        return radioButton.checked;
-      });
-    });
-
-    if (sendButtonHRAllChecked) {
-      sendButtonHR.removeAttribute("disabled");
-    } else {
-      sendButtonHR.setAttribute("disabled", "true");
-    }
-  } else {
-    var sendButtonGroups = ["i_18", "i_19", "i_20", "i_21", "i_22", "i_23", "i_24", "i_34", "i_35", "i_36", "i_37", "i_38", "i_39", "i_40", "i_49", "i_50", "i_51"];
-
-    var sendButtonAllChecked = sendButtonGroups.every(function(groupName) {
-      var groupButtons = document.querySelectorAll('input[type="radio"][name="' + groupName + '"]');
-      return Array.from(groupButtons).some(function(radioButton) {
-        return radioButton.checked;
-      });
-    });
-
-    if (sendButtonAllChecked) {
-      sendButton.removeAttribute("disabled");
-    } else {
-      sendButton.setAttribute("disabled", "true");
-    }
-  }
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   var quizPosts = document.querySelectorAll(".quiz-post");
@@ -153,12 +115,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-  var radioButtons = document.querySelectorAll('input[type="radio"]');
-  radioButtons.forEach(function (radioButton) {
-    radioButton.addEventListener("change", function () {
-      updateSendButtonState();
-    });
-  });
 });
 
 async function submitForm() {
@@ -168,8 +124,16 @@ async function submitForm() {
   const firstNameCd = document.getElementById("firstName-cd").value;
   const job = document.getElementById("job-field").value;
 
-  if (lastName.trim() === "" || firstName.trim() === "" || lastNameCd.trim() === "" || firstNameCd.trim() === "" || job.trim() === "") {
-    const confirmed = confirm("Не все поля заполнены. Вы уверены, что хотите продолжить?");
+  if (
+    lastName.trim() === "" ||
+    firstName.trim() === "" ||
+    lastNameCd.trim() === "" ||
+    firstNameCd.trim() === "" ||
+    job.trim() === ""
+  ) {
+    const confirmed = confirm(
+      "Не все поля заполнены. Вы уверены, что хотите продолжить?"
+    );
     if (!confirmed) {
       return;
     }
@@ -178,10 +142,9 @@ async function submitForm() {
   const middleNameCd = document.getElementById("middleName-cd").value;
   const comment = document.getElementById("comment-field").value;
 
-
-  const button = document.getElementById('sendButton');
-  button.innerText = '';
-  button.classList.add('loading');
+  const button = document.getElementById("sendButton");
+  button.innerText = "";
+  button.classList.add("loading");
 
   const averageValues = [];
 
@@ -235,41 +198,16 @@ async function submitForm() {
       a.click();
       document.body.removeChild(a);
 
-      button.innerText = 'Скачать результаты';
+      button.innerText = "Скачать результаты";
 
-      button.classList.remove('loading');
+      button.classList.remove("loading");
     })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
     });
 }
 
-
-
-
-
-
-
-
-
-
-
 // ______________________________________________________
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 document.getElementById("sendButtonHR").onclick = async function () {
   await submitFormHR();
@@ -281,8 +219,15 @@ async function submitFormHR() {
   const lastNameCd = document.getElementById("lastName-cd").value;
   const firstNameCd = document.getElementById("firstName-cd").value;
 
-  if (lastName.trim() === "" || firstName.trim() === "" || lastNameCd.trim() === "" || firstNameCd.trim() === "") {
-    const confirmed = confirm("Не все поля заполнены. Вы уверены, что хотите продолжить?");
+  if (
+    lastName.trim() === "" ||
+    firstName.trim() === "" ||
+    lastNameCd.trim() === "" ||
+    firstNameCd.trim() === ""
+  ) {
+    const confirmed = confirm(
+      "Не все поля заполнены. Вы уверены, что хотите продолжить?"
+    );
     if (!confirmed) {
       return;
     }
@@ -292,10 +237,10 @@ async function submitFormHR() {
   const job = document.getElementById("job-field").value;
   const comment = document.getElementById("comment-field").value;
 
-  const buttonHR = document.getElementById('sendButtonHR');
-  buttonHR.innerText = '';
-  buttonHR.classList.add('loading');
-  
+  const buttonHR = document.getElementById("sendButtonHR");
+  buttonHR.innerText = "";
+  buttonHR.classList.add("loading");
+
   const averageValues = [];
 
   const quizElementsList = document.querySelectorAll(".quiz-element");
@@ -348,9 +293,9 @@ async function submitFormHR() {
       a.click();
       document.body.removeChild(a);
 
-      buttonHR.innerText = 'Скачать результаты';
+      buttonHR.innerText = "Скачать результаты";
 
-      buttonHR.classList.remove('loading');
+      buttonHR.classList.remove("loading");
     })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
