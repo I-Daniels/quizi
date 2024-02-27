@@ -19,6 +19,13 @@
 </head>
 
 <body>
+    <div class="selectManage" id="selectManage">
+        <div class="manage">
+            <h2>Выберите интервьюера:</h2>
+            <button id="hrButton" class="inputManage">HR менеджер</button>
+            <button id="lineManagerButton" class="inputManage">Линейный менеджер</button>
+        </div>
+    </div>
     <div class="ellipse1"></div>
     <header>
         <img src="img/ROCKWELL CAPITAL.svg" alt="logo-organization">
@@ -61,7 +68,12 @@
             </div>
         </form>
     </section>
-    <section class="section-quiz">
+
+
+
+
+
+    <section class="section-quiz" id="hrquiz">
         <div class="quiz-back">
             <div class="quiz-post">
                 <div class="heading">
@@ -395,142 +407,6 @@
                         <div class="average-value"></div>
                     </div>
                     <div class="quiz-element">
-                        <p id="title">Самообладание</p>
-                        <div class="quiz-elements">
-                            <p>Что является для вас источником стресса?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_18" value="5" id="i-46">
-                                    <label for="i-46">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_18" value="10" id="i-47">
-                                    <label for="i-47">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_18" value="0" id="i-48">
-                                    <label for="i-48">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>Вы работали в состоянии стресса? Приходилось ли принимать решения в таких ситуациях?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_19" value="5" id="i-49">
-                                    <label for="i-49">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_19" value="10" id="i-50">
-                                    <label for="i-50">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_19" value="0" id="i-51">
-                                    <label for="i-51">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>Как вы снимаете стресс?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_20" value="5" id="i-52">
-                                    <label for="i-52">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_20" value="10" id="i-53">
-                                    <label for="i-53">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_20" value="0" id="i-54">
-                                    <label for="i-54">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements-align">
-                            <p>Как переживаете неудачи и поражения?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_21" value="5" id="i-55">
-                                    <label for="i-55">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_21" value="10" id="i-56">
-                                    <label for="i-56">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_21" value="0" id="i-57">
-                                    <label for="i-57">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-hashtag">
-                            <p>#конфликт #напряженность #ошибки #неудачи #поддержка #участие #позитивныйнастрой
-                                #проблемы #препятствия #решения #самообладание #самосознание</p>
-                        </div>
-                        <div class="average-value"></div>
-                    </div>
-                    <div class="quiz-element">
-                        <p id="title">Ориентация на результат</p>
-                        <div class="quiz-elements">
-                            <p>Приведите пример достижения поставленной цели (бизнес или личная цель)?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_22" value="5" id="i-58">
-                                    <label for="i-58">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_22" value="10" id="i-59">
-                                    <label for="i-59">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_22" value="0" id="i-60">
-                                    <label for="i-60">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>Как вы оцениваете достигнутый результат?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_23" value="5" id="i-61">
-                                    <label for="i-61">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_23" value="10" id="i-62">
-                                    <label for="i-62">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_23" value="0" id="i-63">
-                                    <label for="i-63">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>С какими препятствиями вы сталкивались в процессе достижения цели? Как преодолевали
-                                возникающие препятствия и трудности?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_24" value="5" id="i-64">
-                                    <label for="i-64">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_24" value="10" id="i-65">
-                                    <label for="i-65">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_24" value="0" id="i-66">
-                                    <label for="i-66">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-hashtag">
-                            <p>#операции #проблемы #препятствия #результат #ресурсы #самомотивация #амбиции #сроки
-                                #стратегии #реализация #упорство #цели</p>
-                        </div>
-                        <div class="average-value"></div>
-                    </div>
-                    <div class="quiz-element">
                         <p id="title">Смелость</p>
                         <div class="quiz-elements">
                             <p>Приведите пример, когда вам пришлось принимать непопулярные решения?</p>
@@ -738,6 +614,435 @@
                         </div>
                         <div class="average-value"></div>
                     </div>
+                </div>
+            </div>
+            <div class="quiz-post">
+                <div class="heading">
+                    <div class="ellipse"></div>
+                    <img src="img/tasks-main.svg" alt="lidericon">
+                    <div id="heading">
+                        <p>ЗАДАЧИ <span class="result"></span></p>
+                    </div>
+                </div>
+                <div class="basis">
+                    <div class="quiz-element">
+                        <p id="title">Постановка и совершенствование рабочих процессов</p>
+                        <div class="quiz-elements">
+                            <p>Приведите пример оптимизации бизнес-процесса вашей функции?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_41" value="5" id="i-118">
+                                    <label for="i-118">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_41" value="10" id="i-119">
+                                    <label for="i-119">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_41" value="0" id="i-120">
+                                    <label for="i-120">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Насколько они эффективны?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_42" value="5" id="i-121">
+                                    <label for="i-121">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_42" value="10" id="i-122">
+                                    <label for="i-122">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_42" value="0" id="i-123">
+                                    <label for="i-123">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Какие ресурсы, технологии вы использовали для оптимизации рабочих процессов?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_43" value="5" id="i-124">
+                                    <label for="i-124">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_43" value="10" id="i-125">
+                                    <label for="i-125">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_43" value="0" id="i-126">
+                                    <label for="i-126">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements-align">
+                            <p>Применяете ли лучшие практики для повышения эффективности рабочих процессов? На какие
+                                компании вы ориентируетесь?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_44" value="5" id="i-127">
+                                    <label for="i-127">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_44" value="10" id="i-128">
+                                    <label for="i-128">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_44" value="0" id="i-129">
+                                    <label for="i-129">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-hashtag">
+                            <p>#инновации #координация #лучшиепрактики #операции #оптимизация #процессы #системы
+                                #стандарты #регламенты #ресурсы</p>
+                        </div>
+                        <div class="average-value"></div>
+                    </div>
+                    <div class="quiz-element">
+                        <p id="title">Управление качеством</p>
+                        <div class="quiz-elements">
+                            <p>Вы требовательны к себе и окружающим?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_45" value="5" id="i-130">
+                                    <label for="i-130">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_45" value="10" id="i-131">
+                                    <label for="i-131">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_45" value="0" id="i-132">
+                                    <label for="i-132">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements-align">
+                            <p>Прикладываете ли вы усилия, чтобы исключить недоработки и добиться требуемого качества
+                                результата?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_46" value="5" id="i-133">
+                                    <label for="i-133">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_46" value="10" id="i-134">
+                                    <label for="i-134">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_46" value="0" id="i-135">
+                                    <label for="i-135">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Помогаете ли вы коллегам\подчиненным отслеживать качество выполненной работы?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_47" value="5" id="i-136">
+                                    <label for="i-136">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_47" value="10" id="i-137">
+                                    <label for="i-137">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_47" value="0" id="i-138">
+                                    <label for="i-138">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Какие знаете инструменты\технологии позволяющие повысить качество?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_48" value="5" id="i-139">
+                                    <label for="i-139">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_48" value="10" id="i-140">
+                                    <label for="i-140">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_48" value="0" id="i-141">
+                                    <label for="i-141">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-hashtag">
+                            <p>#внимательность #неравнодушие #операции #оптимизация #улучшение #помощь #содействие
+                                #процессы #системы #стандарты #регламенты #результат #сотрудники #подчиненные #сроки</p>
+                        </div>
+                        <div class="average-value"></div>
+                    </div>
+                    <div class="quiz-element">
+                        <p id="title">Управление исполнением</p>
+                        <div class="quiz-elements">
+                            <p>Опишите процесс постановки задач подчиненным?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_52" value="5" id="i-151">
+                                    <label for="i-151">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_52" value="10" id="i-152">
+                                    <label for="i-152">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_52" value="0" id="i-153">
+                                    <label for="i-153">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Обсуждаете ли вы предварительно план выполнения?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_53" value="5" id="i-154">
+                                    <label for="i-154">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_53" value="10" id="i-155">
+                                    <label for="i-155">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_53" value="0" id="i-156">
+                                    <label for="i-156">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Как часто проверяете ход выполнения поставленных задач?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_54" value="5" id="i-157">
+                                    <label for="i-157">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_54" value="10" id="i-158">
+                                    <label for="i-158">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_54" value="0" id="i-159">
+                                    <label for="i-159">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Какую систему отчетности считаете эффективной?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_55" value="5" id="i-160">
+                                    <label for="i-160">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_55" value="10" id="i-161">
+                                    <label for="i-161">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_55" value="0" id="i-162">
+                                    <label for="i-162">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>В какой форме и как часто даете обратную связь?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_56" value="5" id="i-163">
+                                    <label for="i-163">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_56" value="10" id="i-164">
+                                    <label for="i-164">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_56" value="0" id="i-165">
+                                    <label for="i-165">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-hashtag">
+                            <p>#задачи #коммуникация #контроль #координация #обратнаясвязь
+                                #помощь #содействие #результат #ресурсы #сроки #цели</p>
+                        </div>
+                        <div class="average-value"></div>
+                    </div>
+                </div>
+                <div class="buttonBtn">
+                    <button class="btn" id="sendButtonHR" disabled>Скачать результаты</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="section-quiz" id="LMquiz">
+        <div class="quiz-back">
+            <div class="quiz-post">
+                <div class="heading">
+                    <div class="ellipse"></div>
+                    <img src="img/personality-main.svg" alt="lidericon">
+                    <div id="heading">
+                        <p>ЛИЧНОСТЬ <span class="result"></span></p>
+                    </div>
+                </div>
+                <div class="basis">
+                    <div class="quiz-element">
+                        <p id="title">Самообладание</p>
+                        <div class="quiz-elements">
+                            <p>Что является для вас источником стресса?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_18" value="5" id="i-46">
+                                    <label for="i-46">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_18" value="10" id="i-47">
+                                    <label for="i-47">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_18" value="0" id="i-48">
+                                    <label for="i-48">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Вы работали в состоянии стресса? Приходилось ли принимать решения в таких ситуациях?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_19" value="5" id="i-49">
+                                    <label for="i-49">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_19" value="10" id="i-50">
+                                    <label for="i-50">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_19" value="0" id="i-51">
+                                    <label for="i-51">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Как вы снимаете стресс?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_20" value="5" id="i-52">
+                                    <label for="i-52">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_20" value="10" id="i-53">
+                                    <label for="i-53">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_20" value="0" id="i-54">
+                                    <label for="i-54">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements-align">
+                            <p>Как переживаете неудачи и поражения?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_21" value="5" id="i-55">
+                                    <label for="i-55">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_21" value="10" id="i-56">
+                                    <label for="i-56">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_21" value="0" id="i-57">
+                                    <label for="i-57">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-hashtag">
+                            <p>#конфликт #напряженность #ошибки #неудачи #поддержка #участие #позитивныйнастрой
+                                #проблемы #препятствия #решения #самообладание #самосознание</p>
+                        </div>
+                        <div class="average-value"></div>
+                    </div>
+                    <div class="quiz-element">
+                        <p id="title">Ориентация на результат</p>
+                        <div class="quiz-elements">
+                            <p>Приведите пример достижения поставленной цели (бизнес или личная цель)?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_22" value="5" id="i-58">
+                                    <label for="i-58">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_22" value="10" id="i-59">
+                                    <label for="i-59">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_22" value="0" id="i-60">
+                                    <label for="i-60">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>Как вы оцениваете достигнутый результат?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_23" value="5" id="i-61">
+                                    <label for="i-61">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_23" value="10" id="i-62">
+                                    <label for="i-62">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_23" value="0" id="i-63">
+                                    <label for="i-63">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-elements">
+                            <p>С какими препятствиями вы сталкивались в процессе достижения цели? Как преодолевали
+                                возникающие препятствия и трудности?</p>
+                            <div class="elements">
+                                <div class="el">
+                                    <input type="radio" name="i_24" value="5" id="i-64">
+                                    <label for="i-64">Соответствует <br> ожиданиям</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_24" value="10" id="i-65">
+                                    <label for="i-65">Выше <br> ожиданий</label>
+                                </div>
+                                <div class="el">
+                                    <input type="radio" name="i_24" value="0" id="i-66">
+                                    <label for="i-66">Ниже <br> ожиданий</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quiz-hashtag">
+                            <p>#операции #проблемы #препятствия #результат #ресурсы #самомотивация #амбиции #сроки
+                                #стратегии #реализация #упорство #цели</p>
+                        </div>
+                        <div class="average-value"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-post">
+                <div class="heading">
+                    <div class="ellipse"></div>
+                    <img src="img/strategy-main.svg" alt="lidericon">
+                    <div id="heading">
+                        <p>СТРАТЕГИЯ <span class="result"></span></p>
+                    </div>
+                </div>
+                <div class="basis">
                     <div class="quiz-element">
                         <p id="title">Системное мышление</p>
                         <div class="quiz-elements">
@@ -962,83 +1267,6 @@
                         <div class="average-value"></div>
                     </div>
                     <div class="quiz-element">
-                        <p id="title">Управление качеством</p>
-                        <div class="quiz-elements">
-                            <p>Вы требовательны к себе и окружающим?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_45" value="5" id="i-130">
-                                    <label for="i-130">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_45" value="10" id="i-131">
-                                    <label for="i-131">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_45" value="0" id="i-132">
-                                    <label for="i-132">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements-align">
-                            <p>Прикладываете ли вы усилия, чтобы исключить недоработки и добиться требуемого качества
-                                результата?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_46" value="5" id="i-133">
-                                    <label for="i-133">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_46" value="10" id="i-134">
-                                    <label for="i-134">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_46" value="0" id="i-135">
-                                    <label for="i-135">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>Помогаете ли вы коллегам\подчиненным отслеживать качество выполненной работы?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_47" value="5" id="i-136">
-                                    <label for="i-136">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_47" value="10" id="i-137">
-                                    <label for="i-137">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_47" value="0" id="i-138">
-                                    <label for="i-138">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>Какие знаете инструменты\технологии позволяющие повысить качество?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_48" value="5" id="i-139">
-                                    <label for="i-139">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_48" value="10" id="i-140">
-                                    <label for="i-140">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_48" value="0" id="i-141">
-                                    <label for="i-141">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-hashtag">
-                            <p>#внимательность #неравнодушие #операции #оптимизация #улучшение #помощь #содействие
-                                #процессы #системы #стандарты #регламенты #результат #сотрудники #подчиненные #сроки</p>
-                        </div>
-                        <div class="average-value"></div>
-                    </div>
-                    <div class="quiz-element">
                         <p id="title">Решение проблем</p>
                         <div class="quiz-elements-align">
                             <p>Приведите пример проблемной ситуации? Как быстро удалось понять причины
@@ -1099,99 +1327,6 @@
                         </div>
                         <div class="average-value"></div>
                     </div>
-                    <div class="quiz-element">
-                        <p id="title">Управление исполнением</p>
-                        <div class="quiz-elements">
-                            <p>Опишите процесс постановки задач подчиненным?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_52" value="5" id="i-151">
-                                    <label for="i-151">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_52" value="10" id="i-152">
-                                    <label for="i-152">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_52" value="0" id="i-153">
-                                    <label for="i-153">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>Обсуждаете ли вы предварительно план выполнения?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_53" value="5" id="i-154">
-                                    <label for="i-154">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_53" value="10" id="i-155">
-                                    <label for="i-155">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_53" value="0" id="i-156">
-                                    <label for="i-156">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>Как часто проверяете ход выполнения поставленных задач?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_54" value="5" id="i-157">
-                                    <label for="i-157">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_54" value="10" id="i-158">
-                                    <label for="i-158">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_54" value="0" id="i-159">
-                                    <label for="i-159">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>Какую систему отчетности считаете эффективной?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_55" value="5" id="i-160">
-                                    <label for="i-160">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_55" value="10" id="i-161">
-                                    <label for="i-161">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_55" value="0" id="i-162">
-                                    <label for="i-162">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-elements">
-                            <p>В какой форме и как часто даете обратную связь?</p>
-                            <div class="elements">
-                                <div class="el">
-                                    <input type="radio" name="i_56" value="5" id="i-163">
-                                    <label for="i-163">Соответствует <br> ожиданиям</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_56" value="10" id="i-164">
-                                    <label for="i-164">Выше <br> ожиданий</label>
-                                </div>
-                                <div class="el">
-                                    <input type="radio" name="i_56" value="0" id="i-165">
-                                    <label for="i-165">Ниже <br> ожиданий</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="quiz-hashtag">
-                            <p>#задачи #коммуникация #контроль #координация #обратнаясвязь
-                                #помощь #содействие #результат #ресурсы #сроки #цели</p>
-                        </div>
-                        <div class="average-value"></div>
-                    </div>
                 </div>
                 <div class="buttonBtn">
                     <button class="btn" id="sendButton" disabled>Скачать результаты</button>
@@ -1199,6 +1334,12 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
     <iframe src="pagepdf.html" frameborder="0" width="100%" height="0" id="iframe" border="0"></iframe>
 </body>
 <script src="js/script.js"></script>
